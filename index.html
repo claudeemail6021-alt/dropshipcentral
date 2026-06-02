@@ -218,9 +218,12 @@
     <form onsubmit="captureLead(event,'starter-kit')" class="bg-white rounded-xl p-5 text-slate-800">
       <div data-form-body>
         <label class="text-sm font-semibold">Email address</label>
-        <input required type="email" name="email" placeholder="you@example.com" class="mt-1 w-full border border-slate-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-teal-500 outline-none">
+        <input required type="email" name="EMAIL" placeholder="you@example.com" class="mt-1 w-full border border-slate-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-teal-500 outline-none">
         <button class="mt-3 w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2.5 rounded-lg">Send Me the Free Kit →</button>
-        <p class="mt-2 text-xs text-slate-500">No spam. Unsubscribe anytime. We respect your privacy.</p>
+        <p class="mt-2 text-xs text-slate-500">By subscribing, you consent to receive marketing emails from DropShipCentral and agree to our <a href="#" onclick="nav('legal');return false" class="text-teal-700 underline">Privacy Policy</a>. We never sell your data, and you can unsubscribe anytime via the link in every email.</p>
+        <!-- Brevo honeypot + locale (kept hidden; required by Brevo) -->
+        <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+        <input type="hidden" name="locale" value="en">
       </div>
       <div data-form-success class="hidden text-center py-6">
         <div class="text-3xl">✅</div>
@@ -469,7 +472,10 @@
 
   <div class="mt-6 bg-white rounded-xl border border-slate-200 p-7 max-w-3xl">
     <h2 class="text-xl font-bold">Privacy Policy</h2>
-    <p class="mt-3 text-slate-600 text-sm">We respect your privacy. We collect only the information you voluntarily provide (such as your email via our forms) and standard analytics data via Google Analytics. We use Google AdSense, which may use cookies to serve relevant ads. We do not sell your personal information. You can request deletion of your data at any time by contacting us. By using this site you consent to this policy.</p>
+    <p class="mt-3 text-slate-600 text-sm">We respect your privacy and collect only the information you voluntarily provide (such as your email address via our forms) along with standard analytics data via Google Analytics.</p>
+    <p class="mt-3 text-slate-600 text-sm"><strong>Email marketing.</strong> When you subscribe, your email is processed and stored by our email service provider, Brevo, on our behalf, and is used to send you the resources you requested and related marketing emails. You provide explicit consent at sign-up, and you can withdraw it at any time using the unsubscribe link included in every email.</p>
+    <p class="mt-3 text-slate-600 text-sm"><strong>Cookies &amp; advertising.</strong> We use Google AdSense and Google Analytics, which may set cookies to measure traffic and serve relevant ads. You can manage or disable cookies in your browser settings, and where required by law, advertising cookies are set only with your consent.</p>
+    <p class="mt-3 text-slate-600 text-sm"><strong>Your rights.</strong> Depending on your location (including under the GDPR and CCPA), you may have the right to access, correct, or delete your personal data, or to object to its processing. We never sell your personal information. To exercise any right, contact us at <a href="mailto:privacy@dropshipcentral.com" class="text-teal-700 underline">privacy@dropshipcentral.com</a>.</p>
   </div>
 
   <div class="mt-6 bg-white rounded-xl border border-slate-200 p-7 max-w-3xl">
@@ -494,6 +500,7 @@
         <label class="text-sm font-semibold">Message</label>
         <textarea required name="message" rows="4" class="mt-1 mb-3 w-full border border-slate-300 rounded-lg px-3 py-2"></textarea>
         <button class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2.5 rounded-lg">Send Message</button>
+        <p class="mt-2 text-xs text-slate-500">We use your details only to respond to your inquiry, per our <a href="#" onclick="nav('legal');return false" class="text-teal-700 underline">Privacy Policy</a>.</p>
       </div>
       <div data-form-success class="hidden text-center py-8">
         <div class="text-3xl">✅</div>
@@ -644,18 +651,30 @@ function submitSupplier(e){
   if(window.gtag)gtag('event','generate_lead',{type:'supplier_submit'});
 }
 
+/* Brevo subscription form endpoint (lead magnet). */
+var BREVO_ACTION="https://54b3b228.sibforms.com/serve/MUIFAC5l3teXKGXgyYqPGIqNxIicgm-HJZostOSSVxydQktRhYP4ZZRtaqY8WtLXN2mjW8po9XjbcetOLw34_wE1sGC3YdmVTPeS61FJ0Ep1yi_lrsSRZd8_W6w6ePJjHyHrRufXiQjgGv9MIF33Clenj-bYX0HOynWpwOSfMQeSw1N3upSTTGIS9E47ravKsO6aq3ZSOfPXCOFhpg==";
+
 function captureLead(e,source){
   e.preventDefault();
   var f=e.target;
-  var email=f.email?f.email.value:'';
+  var email=(f.EMAIL&&f.EMAIL.value)||(f.email&&f.email.value)||'';
+
+  /* Local backup + analytics for every lead. */
   var leads=[];
   try{leads=JSON.parse(localStorage.getItem('dsc_leads')||'[]')}catch(_){}
   leads.push({email:email,source:source,at:new Date().toISOString()});
   localStorage.setItem('dsc_leads',JSON.stringify(leads));
-  /* Ready to forward to Brevo/Mailchimp: replace this console.log with an API/embed call. */
-  console.log('[DropShipCentral] Lead captured (ready for Brevo/Mailchimp):',{email:email,source:source});
-  showSuccess(f);
+  console.log('[DropShipCentral] Lead captured:',{email:email,source:source});
   if(window.gtag)gtag('event','generate_lead',{type:source});
+
+  /* Lead magnet -> send to Brevo in the background, keep our own UI/success message. */
+  if(source==='starter-kit'){
+    try{
+      var fd=new FormData(f);
+      fetch(BREVO_ACTION,{method:'POST',mode:'no-cors',body:fd});
+    }catch(err){console.warn('[DropShipCentral] Brevo submit issue:',err);}
+  }
+  showSuccess(f);
 }
 </script>
 
