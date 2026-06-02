@@ -564,7 +564,7 @@ window.addEventListener('DOMContentLoaded',()=>{
   renderDirectory();
 });
 
-/* ---------- Supplier data (15 vetted 2026 suppliers) ---------- */
+/* ---------- Supplier data (15 vetted 2026 suppliers, all with active affiliate programs) ---------- */
 var SUPPLIERS=[
   {name:"Spocket",region:"US/EU",niche:"General",ship:"fast",shipTxt:"2–7 days",integ:"Shopify, Wix, Woo",partner:true},
   {name:"Zendrop",region:"US",niche:"General",ship:"fast",shipTxt:"3–7 days",integ:"Shopify",partner:true},
@@ -572,15 +572,15 @@ var SUPPLIERS=[
   {name:"Printify",region:"US/EU",niche:"Print on Demand",ship:"medium",shipTxt:"4–10 days",integ:"Shopify, Etsy, Wix",partner:true},
   {name:"DSers",region:"Global",niche:"General",ship:"medium",shipTxt:"7–15 days",integ:"Shopify, Woo",partner:true},
   {name:"CJdropshipping",region:"Global",niche:"General",ship:"medium",shipTxt:"7–12 days",integ:"Shopify, Woo, Wix",partner:true},
-  {name:"Modalyst",region:"US/EU",niche:"Fashion",ship:"fast",shipTxt:"3–8 days",integ:"Shopify, Wix",partner:false},
-  {name:"SaleHoo",region:"Global",niche:"General",ship:"medium",shipTxt:"Varies",integ:"Directory",partner:false},
-  {name:"Doba",region:"US",niche:"General",ship:"fast",shipTxt:"2–6 days",integ:"Shopify, BigCommerce",partner:false},
-  {name:"Syncee",region:"US/EU",niche:"Home & Garden",ship:"fast",shipTxt:"3–7 days",integ:"Shopify, Wix, Woo",partner:false},
-  {name:"AppScenic",region:"US/EU",niche:"Home & Garden",ship:"fast",shipTxt:"3–7 days",integ:"Shopify, Woo",partner:false},
-  {name:"Trendsi",region:"US",niche:"Fashion",ship:"fast",shipTxt:"2–5 days",integ:"Shopify",partner:false},
-  {name:"Dropified",region:"Global",niche:"General",ship:"medium",shipTxt:"7–14 days",integ:"Shopify, Woo",partner:false},
-  {name:"Inventory Source",region:"US",niche:"Electronics",ship:"fast",shipTxt:"2–6 days",integ:"Multiple",partner:false},
-  {name:"GreenDropShip",region:"US",niche:"Beauty",ship:"fast",shipTxt:"3–6 days",integ:"Shopify, Woo",partner:false}
+  {name:"AutoDS",region:"Global",niche:"General",ship:"medium",shipTxt:"7–14 days",integ:"Shopify, Woo, eBay",partner:true},
+  {name:"Dropified",region:"Global",niche:"General",ship:"medium",shipTxt:"7–14 days",integ:"Shopify, Woo",partner:true},
+  {name:"AliDropship",region:"Global",niche:"General",ship:"medium",shipTxt:"7–15 days",integ:"WooCommerce",partner:true},
+  {name:"Modalyst",region:"US/EU",niche:"Fashion",ship:"fast",shipTxt:"3–8 days",integ:"Shopify, Wix, Woo",partner:true},
+  {name:"Syncee",region:"Global",niche:"Home & Garden",ship:"fast",shipTxt:"3–7 days",integ:"Shopify, Wix, Woo",partner:true},
+  {name:"SaleHoo",region:"Global",niche:"General",ship:"medium",shipTxt:"Varies",integ:"Directory + Tools",partner:true},
+  {name:"Inventory Source",region:"US",niche:"Electronics",ship:"fast",shipTxt:"2–6 days",integ:"Multiple",partner:true},
+  {name:"Wholesale2b",region:"US",niche:"General",ship:"medium",shipTxt:"5–12 days",integ:"Shopify, Woo, BigCommerce",partner:true},
+  {name:"BrandsGateway",region:"EU",niche:"Fashion",ship:"fast",shipTxt:"3–7 days",integ:"Shopify, Woo, Wix",partner:true}
 ];
 
 var AFF="https://your-affiliate-link.com/";
@@ -610,7 +610,7 @@ function renderDirectory(){
         ?'<span class="text-[10px] bg-teal-100 text-teal-700 px-2 py-0.5 rounded font-semibold">Partner ✓</span>'
         :'<span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-semibold">Verified</span>'}</td>
       <td class="px-4 py-3">${s.partner
-        ?'<a rel="sponsored nofollow" target="_blank" href="'+AFF+s.name.toLowerCase().replace(/[^a-z]/g,'')+'" class="text-teal-700 font-semibold">Visit →</a>'
+        ?'<a rel="sponsored nofollow" target="_blank" href="'+AFF+s.name.toLowerCase().replace(/[^a-z0-9]/g,'')+'" class="text-teal-700 font-semibold">Visit →</a>'
         :'<span class="text-slate-400">—</span>'}</td>
     </tr>`).join('')||'<tr><td colspan="7" class="px-4 py-6 text-center text-slate-400">No suppliers match your filters.</td></tr>';
   document.getElementById('dirCount').textContent=rows.length+' supplier(s) shown';
