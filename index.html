@@ -21,7 +21,6 @@
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230d9488%22/><text y=%22.9em%22 x=%2250%22 font-size=%2270%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22>D</text></svg>">
 
-<!-- Tailwind CSS v4 Browser CDN (no build step) -->
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 <!-- Google Analytics 4 -->
@@ -43,101 +42,75 @@
   @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
   html{scroll-behavior:smooth}
   .ad-wrap{min-height:90px;display:flex;align-items:center;justify-content:center}
+  .prose p{margin-top:.75rem;color:#475569;line-height:1.75}
+  .prose h3{margin-top:1.5rem;font-weight:700;font-size:1.125rem;color:#1e293b}
+  .prose ul{margin-top:.5rem;padding-left:1.25rem;list-style:disc;color:#475569}
+  .prose ul li{margin-bottom:.25rem}
+  .prose a{color:#0d9488;text-decoration:underline}
+  .prose strong{color:#1e293b}
+  .tag{display:inline-block;font-size:.7rem;font-weight:700;padding:.15rem .5rem;border-radius:.25rem;text-transform:uppercase;letter-spacing:.04em}
+  @media(max-width:640px){
+    .mobile-hide{display:none}
+    .mobile-card td{display:block;padding:.4rem .75rem}
+    .mobile-card td:first-child{font-weight:700;background:#f8fafc;padding-top:.6rem}
+    .mobile-card td:last-child{padding-bottom:.6rem}
+  }
 </style>
 
-<!-- ===================== JSON-LD STRUCTURED DATA ===================== -->
+<!-- JSON-LD -->
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"DropShipCentral",
-  "url":"https://dropshipcentral.com/",
-  "logo":"https://dropshipcentral.com/logo.png",
-  "description":"The central hub for vetted dropshipping suppliers, tools, and success guides in 2026.",
-  "sameAs":["https://twitter.com/dropshipcentral","https://www.linkedin.com/company/dropshipcentral"]
-}
+{"@context":"https://schema.org","@type":"Organization","name":"DropShipCentral","url":"https://dropshipcentral.com/","description":"The central hub for vetted dropshipping suppliers, tools, and success guides in 2026.","sameAs":["https://twitter.com/dropshipcentral","https://www.linkedin.com/company/dropshipcentral"]}
 </script>
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebSite",
-  "name":"DropShipCentral",
-  "url":"https://dropshipcentral.com/",
-  "potentialAction":{
-    "@type":"SearchAction",
-    "target":"https://dropshipcentral.com/?q={search_term_string}",
-    "query-input":"required name=search_term_string"
-  }
-}
+{"@context":"https://schema.org","@type":"WebSite","name":"DropShipCentral","url":"https://dropshipcentral.com/","potentialAction":{"@type":"SearchAction","target":"https://dropshipcentral.com/?q={search_term_string}","query-input":"required name=search_term_string"}}
 </script>
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"ItemList",
-  "name":"Top 2026 Dropshipping Suppliers",
-  "itemListElement":[
-    {"@type":"ListItem","position":1,"name":"Spocket","url":"https://dropshipcentral.com/#tools"},
-    {"@type":"ListItem","position":2,"name":"Printful","url":"https://dropshipcentral.com/#tools"},
-    {"@type":"ListItem","position":3,"name":"Zendrop","url":"https://dropshipcentral.com/#tools"},
-    {"@type":"ListItem","position":4,"name":"DSers","url":"https://dropshipcentral.com/#tools"},
-    {"@type":"ListItem","position":5,"name":"CJdropshipping","url":"https://dropshipcentral.com/#tools"},
-    {"@type":"ListItem","position":6,"name":"Printify","url":"https://dropshipcentral.com/#tools"}
-  ]
-}
+{"@context":"https://schema.org","@type":"ItemList","name":"Top 2026 Dropshipping Suppliers","itemListElement":[{"@type":"ListItem","position":1,"name":"Spocket","url":"https://dropshipcentral.com/#tools"},{"@type":"ListItem","position":2,"name":"Printful","url":"https://dropshipcentral.com/#tools"},{"@type":"ListItem","position":3,"name":"Zendrop","url":"https://dropshipcentral.com/#tools"},{"@type":"ListItem","position":4,"name":"DSers","url":"https://dropshipcentral.com/#tools"},{"@type":"ListItem","position":5,"name":"CJdropshipping","url":"https://dropshipcentral.com/#tools"},{"@type":"ListItem","position":6,"name":"Printify","url":"https://dropshipcentral.com/#tools"}]}
 </script>
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"What is the best dropshipping supplier in 2026?","acceptedAnswer":{"@type":"Answer","text":"It depends on your niche. For fast US/EU shipping, Spocket and Zendrop lead. For print-on-demand, Printful and Printify are top choices. DSers remains the standard for AliExpress sourcing."}},
-    {"@type":"Question","name":"Is dropshipping still profitable in 2026?","acceptedAnswer":{"@type":"Answer","text":"Yes. Dropshipping remains profitable in 2026 for sellers who focus on fast-shipping US/EU suppliers, strong branding, and a defensible niche rather than generic AliExpress products."}},
-    {"@type":"Question","name":"How much does it cost to start dropshipping?","acceptedAnswer":{"@type":"Answer","text":"You can start for under $100/month: a Shopify or BigCommerce plan, a supplier app like Spocket or Zendrop, and a domain. Many tools offer free tiers to test products first."}},
-    {"@type":"Question","name":"Do I need an LLC to start dropshipping?","acceptedAnswer":{"@type":"Answer","text":"You can legally start as a sole proprietor in most regions, but forming an LLC offers liability protection and is recommended once you have consistent sales."}}
-  ]
-}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the best dropshipping supplier in 2026?","acceptedAnswer":{"@type":"Answer","text":"For fast US/EU shipping, Spocket and Zendrop lead. For print-on-demand, Printful and Printify are top choices. DSers remains the standard for AliExpress sourcing."}},{"@type":"Question","name":"Is dropshipping still profitable in 2026?","acceptedAnswer":{"@type":"Answer","text":"Yes. Dropshipping remains profitable for sellers who focus on fast-shipping US/EU suppliers, strong branding, and a defensible niche."}},{"@type":"Question","name":"How much does it cost to start dropshipping?","acceptedAnswer":{"@type":"Answer","text":"Under $100/month: a Shopify or BigCommerce plan, a supplier app like Spocket or Zendrop, and a domain. Many tools offer free tiers."}},{"@type":"Question","name":"Do I need an LLC to start dropshipping?","acceptedAnswer":{"@type":"Answer","text":"You can start as a sole proprietor, but an LLC is recommended once you have consistent revenue for liability protection."}}]}
 </script>
 </head>
 
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-<!-- ===================== NAVBAR ===================== -->
+<!-- NAVBAR -->
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
   <nav class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
-    <a href="#" onclick="nav('home');return false" class="flex items-center gap-2">
+    <a href="#" onclick="nav('home');return false" class="flex items-center gap-2 shrink-0">
       <span class="w-9 h-9 grid place-items-center rounded-lg bg-teal-600 text-white font-extrabold text-lg">D</span>
       <span class="flex flex-col leading-tight">
-        <span class="font-extrabold text-slate-900 text-lg">DropShipCentral</span>
+        <span class="font-extrabold text-slate-900 text-base sm:text-lg">DropShipCentral</span>
         <span class="hidden sm:block text-[11px] text-slate-500">The Central Hub for Dropshipping in 2026</span>
       </span>
     </a>
     <div class="hidden lg:flex items-center gap-1 text-sm font-medium">
       <a href="#" onclick="nav('home');return false" class="px-3 py-2 rounded-md hover:bg-slate-100">Home</a>
       <a href="#" onclick="nav('directory');return false" class="px-3 py-2 rounded-md hover:bg-slate-100">Directory</a>
-      <a href="#" onclick="nav('tools');return false" class="px-3 py-2 rounded-md hover:bg-slate-100">Tools &amp; Platforms</a>
+      <a href="#" onclick="nav('tools');return false" class="px-3 py-2 rounded-md hover:bg-slate-100">Tools</a>
       <a href="#" onclick="nav('guides');return false" class="px-3 py-2 rounded-md hover:bg-slate-100">Guides</a>
       <a href="#" onclick="nav('blog');return false" class="px-3 py-2 rounded-md hover:bg-slate-100">Blog</a>
       <a href="#" onclick="nav('about');return false" class="px-3 py-2 rounded-md hover:bg-slate-100">About</a>
       <a href="#" onclick="nav('contact');return false" class="px-3 py-2 rounded-md hover:bg-slate-100">Contact</a>
     </div>
-    <a href="#" onclick="nav('tools');return false" class="hidden md:inline-flex bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold px-4 py-2 rounded-lg">Compare Tools →</a>
-    <button onclick="toggleMobile()" class="lg:hidden p-2 rounded-md hover:bg-slate-100" aria-label="Menu">
+    <a href="#" onclick="nav('tools');return false" class="hidden md:inline-flex bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold px-4 py-2 rounded-lg whitespace-nowrap">Compare Tools →</a>
+    <button onclick="toggleMobile()" class="lg:hidden p-2 rounded-md hover:bg-slate-100 ml-2" aria-label="Menu">
       <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
   </nav>
   <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 py-2 text-sm font-medium">
-    <a href="#" onclick="nav('home');return false" class="block px-3 py-2 rounded hover:bg-slate-100">Home</a>
-    <a href="#" onclick="nav('directory');return false" class="block px-3 py-2 rounded hover:bg-slate-100">Directory</a>
-    <a href="#" onclick="nav('tools');return false" class="block px-3 py-2 rounded hover:bg-slate-100">Tools &amp; Platforms</a>
-    <a href="#" onclick="nav('guides');return false" class="block px-3 py-2 rounded hover:bg-slate-100">Guides</a>
-    <a href="#" onclick="nav('blog');return false" class="block px-3 py-2 rounded hover:bg-slate-100">Blog</a>
-    <a href="#" onclick="nav('about');return false" class="block px-3 py-2 rounded hover:bg-slate-100">About</a>
-    <a href="#" onclick="nav('contact');return false" class="block px-3 py-2 rounded hover:bg-slate-100">Contact</a>
-    <a href="#" onclick="nav('legal');return false" class="block px-3 py-2 rounded hover:bg-slate-100">Legal</a>
+    <a href="#" onclick="nav('home');return false" class="block px-3 py-2.5 rounded hover:bg-slate-100">Home</a>
+    <a href="#" onclick="nav('directory');return false" class="block px-3 py-2.5 rounded hover:bg-slate-100">Directory</a>
+    <a href="#" onclick="nav('tools');return false" class="block px-3 py-2.5 rounded hover:bg-slate-100">Tools &amp; Platforms</a>
+    <a href="#" onclick="nav('guides');return false" class="block px-3 py-2.5 rounded hover:bg-slate-100">Guides</a>
+    <a href="#" onclick="nav('blog');return false" class="block px-3 py-2.5 rounded hover:bg-slate-100">Blog</a>
+    <a href="#" onclick="nav('about');return false" class="block px-3 py-2.5 rounded hover:bg-slate-100">About</a>
+    <a href="#" onclick="nav('contact');return false" class="block px-3 py-2.5 rounded hover:bg-slate-100">Contact</a>
+    <a href="#" onclick="nav('legal');return false" class="block px-3 py-2.5 rounded hover:bg-slate-100">Legal</a>
   </div>
 </header>
 
-<!-- Global affiliate disclosure ribbon -->
+<!-- Affiliate disclosure ribbon -->
 <div class="bg-slate-100 border-b border-slate-200 text-center text-xs text-slate-600 py-2 px-4">
   <strong>Affiliate Disclosure:</strong> DropShipCentral is reader-supported. Some links are affiliate links — we may earn a commission at no extra cost to you. <a href="#" onclick="nav('legal');return false" class="text-teal-700 underline">Learn more</a>.
 </div>
@@ -148,36 +121,34 @@
 <!-- HOME -->
 <!-- ============================================================= -->
 <section x-section="home" class="active">
-
-  <!-- Hero -->
   <div class="grid lg:grid-cols-2 gap-10 items-center py-8">
     <div>
       <span class="inline-block bg-teal-50 text-teal-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">Updated June 2026 · Vetted Suppliers</span>
       <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">The Central Hub for Dropshipping Suppliers, Tools &amp; Success</h1>
       <p class="mt-5 text-lg text-slate-600">Compare vetted 2026 dropshipping suppliers with fast US &amp; EU shipping, find the best-paying tools and platforms, and follow beginner-friendly guides built to actually grow your store.</p>
       <div class="mt-7 flex flex-wrap gap-3">
-        <a href="#" onclick="nav('directory');return false" class="bg-teal-600 hover:bg-teal-700 text-white font-semibold px-6 py-3 rounded-lg shadow">Browse the Supplier Directory →</a>
-        <a href="#" onclick="nav('tools');return false" class="bg-white border border-slate-300 hover:border-teal-500 text-slate-800 font-semibold px-6 py-3 rounded-lg">Compare Top Tools</a>
+        <a href="#" onclick="nav('directory');return false" class="bg-teal-600 hover:bg-teal-700 text-white font-semibold px-5 py-3 rounded-lg shadow text-sm sm:text-base">Browse Supplier Directory →</a>
+        <a href="#" onclick="nav('tools');return false" class="bg-white border border-slate-300 hover:border-teal-500 text-slate-800 font-semibold px-5 py-3 rounded-lg text-sm sm:text-base">Compare Top Tools</a>
       </div>
-      <div class="mt-6 flex items-center gap-6 text-sm text-slate-500">
-        <span>★★★★★ <span class="text-slate-700 font-medium">Built for a growing community of sellers</span></span>
+      <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-slate-500">
+        <span>★★★★★ <span class="text-slate-700 font-medium">Growing seller community</span></span>
         <span>15 suppliers vetted</span>
       </div>
     </div>
     <div class="bg-white rounded-2xl shadow-lg border border-slate-200 p-6">
       <h3 class="font-bold text-slate-900 mb-4">Featured 2026 Tools</h3>
       <div class="space-y-3">
-        <div class="flex items-center justify-between p-3 rounded-lg bg-slate-50">
-          <div><p class="font-semibold">Spocket</p><p class="text-xs text-slate-500">US/EU suppliers · fast shipping</p></div>
-          <span class="text-teal-700 font-bold text-sm">20–30% recurring</span>
+        <div class="flex items-center justify-between p-3 rounded-lg bg-slate-50 gap-2">
+          <div class="min-w-0"><p class="font-semibold truncate">Spocket</p><p class="text-xs text-slate-500">US/EU · fast shipping</p></div>
+          <span class="text-teal-700 font-bold text-sm shrink-0">20–30% recurring</span>
         </div>
-        <div class="flex items-center justify-between p-3 rounded-lg bg-slate-50">
-          <div><p class="font-semibold">Printful</p><p class="text-xs text-slate-500">Print on demand</p></div>
-          <span class="text-teal-700 font-bold text-sm">10% recurring</span>
+        <div class="flex items-center justify-between p-3 rounded-lg bg-slate-50 gap-2">
+          <div class="min-w-0"><p class="font-semibold truncate">Printful</p><p class="text-xs text-slate-500">Print on demand</p></div>
+          <span class="text-teal-700 font-bold text-sm shrink-0">10% recurring</span>
         </div>
-        <div class="flex items-center justify-between p-3 rounded-lg bg-slate-50">
-          <div><p class="font-semibold">Zendrop</p><p class="text-xs text-slate-500">AI sourcing · US warehouses</p></div>
-          <span class="text-teal-700 font-bold text-sm">High payout</span>
+        <div class="flex items-center justify-between p-3 rounded-lg bg-slate-50 gap-2">
+          <div class="min-w-0"><p class="font-semibold truncate">Zendrop</p><p class="text-xs text-slate-500">AI sourcing · US warehouses</p></div>
+          <span class="text-teal-700 font-bold text-sm shrink-0">High payout</span>
         </div>
       </div>
       <a href="#" onclick="nav('tools');return false" class="mt-4 block text-center text-sm font-semibold text-teal-700">See all tools &amp; commissions →</a>
@@ -185,25 +156,25 @@
   </div>
 
   <!-- Value props -->
-  <div class="grid md:grid-cols-3 gap-6 mt-10">
+  <div class="grid sm:grid-cols-3 gap-6 mt-10">
     <div class="bg-white p-6 rounded-xl border border-slate-200">
       <div class="w-11 h-11 rounded-lg bg-teal-50 text-teal-700 grid place-items-center mb-3 text-xl">✓</div>
       <h3 class="font-bold text-slate-900">Vetted, Not Spammed</h3>
-      <p class="text-sm text-slate-600 mt-2">Every supplier is reviewed for shipping speed, integrations, pricing, and real seller feedback — no copy-paste lists. <a href="#" onclick="nav('directory');return false" class="text-teal-700 underline">See the directory →</a></p>
+      <p class="text-sm text-slate-600 mt-2">Every supplier is reviewed for shipping speed, integrations, pricing, and real seller feedback. <a href="#" onclick="nav('directory');return false" class="text-teal-700 underline">See the directory →</a></p>
     </div>
     <div class="bg-white p-6 rounded-xl border border-slate-200">
       <div class="w-11 h-11 rounded-lg bg-teal-50 text-teal-700 grid place-items-center mb-3 text-xl">⚡</div>
       <h3 class="font-bold text-slate-900">Built for Speed</h3>
-      <p class="text-sm text-slate-600 mt-2">Filter suppliers by region, niche, integration, and shipping time in seconds with our live directory. <a href="#" onclick="nav('guides');return false" class="text-teal-700 underline">Read the guides →</a></p>
+      <p class="text-sm text-slate-600 mt-2">Filter suppliers by region, niche, integration, and shipping time in seconds. <a href="#" onclick="nav('guides');return false" class="text-teal-700 underline">Read the guides →</a></p>
     </div>
     <div class="bg-white p-6 rounded-xl border border-slate-200">
       <div class="w-11 h-11 rounded-lg bg-teal-50 text-teal-700 grid place-items-center mb-3 text-xl">📈</div>
       <h3 class="font-bold text-slate-900">Made to Convert</h3>
-      <p class="text-sm text-slate-600 mt-2">Clear, honest comparisons and disclosed recommendations help you pick the right stack and start selling faster. <a href="#" onclick="nav('tools');return false" class="text-teal-700 underline">Compare tools →</a></p>
+      <p class="text-sm text-slate-600 mt-2">Clear, honest comparisons and disclosed affiliate recommendations. <a href="#" onclick="nav('tools');return false" class="text-teal-700 underline">Compare tools →</a></p>
     </div>
   </div>
 
-  <!-- AdSense: Home In-Content -->
+  <!-- AdSense: Home -->
   <div class="ad-wrap my-10">
     <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-3024315445700130" data-ad-slot="1000000001" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -218,16 +189,17 @@
     <form onsubmit="captureLead(event,'starter-kit')" class="bg-white rounded-xl p-5 text-slate-800">
       <div data-form-body>
         <label class="text-sm font-semibold">Email address</label>
-        <input required type="email" name="EMAIL" placeholder="you@example.com" class="mt-1 w-full border border-slate-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-teal-500 outline-none">
-        <button class="mt-3 w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2.5 rounded-lg">Send Me the Free Kit →</button>
-        <p class="mt-2 text-xs text-slate-500">By subscribing, you consent to receive marketing emails from DropShipCentral and agree to our <a href="#" onclick="nav('legal');return false" class="text-teal-700 underline">Privacy Policy</a>. We never sell your data, and you can unsubscribe anytime via the link in every email.</p>
+        <input required type="email" name="EMAIL" placeholder="you@example.com" class="mt-1 w-full border border-slate-300 rounded-lg px-3 py-2.5 focus:ring-2 focus:ring-teal-500 outline-none text-base">
+        <button class="mt-3 w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 rounded-lg text-base">Send Me the Free Kit →</button>
+        <p class="mt-2 text-xs text-slate-500">By subscribing, you consent to receive marketing emails from DropShipCentral per our <a href="#" onclick="nav('legal');return false" class="text-teal-700 underline">Privacy Policy</a>. Unsubscribe anytime.</p>
         <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
         <input type="hidden" name="locale" value="en">
       </div>
-      <div data-form-success class="hidden text-center py-6">
-        <div class="text-3xl">✅</div>
-        <p class="mt-2 font-bold text-slate-900">You're in! Check your inbox.</p>
-        <p class="mt-1 text-sm text-slate-600">Your 2026 Dropshipping Starter Kit is on its way.</p>
+      <div data-form-success class="hidden text-center py-4">
+        <div class="text-4xl">✅</div>
+        <p class="mt-2 font-bold text-slate-900 text-lg">You're in!</p>
+        <p class="mt-1 text-sm text-slate-700">Check your inbox — a confirmation email is on its way. Click the link inside to confirm and receive your starter kit.</p>
+        <p class="mt-3 text-xs text-slate-500">While you wait: <a href="#" onclick="nav('directory');return false" class="text-teal-700 underline font-medium">browse the supplier directory →</a></p>
       </div>
     </form>
   </div>
@@ -235,7 +207,7 @@
   <!-- Social proof -->
   <div class="mt-12 text-center">
     <p class="text-sm uppercase tracking-wide text-slate-400 font-semibold">Built for sellers on every major platform</p>
-    <div class="mt-4 flex flex-wrap justify-center gap-x-10 gap-y-3 text-slate-400 font-bold text-lg">
+    <div class="mt-4 flex flex-wrap justify-center gap-x-8 gap-y-3 text-slate-400 font-bold text-base sm:text-lg">
       <span>Shopify</span><span>BigCommerce</span><span>WooCommerce</span><span>Wix</span><span>Squarespace</span>
     </div>
   </div>
@@ -243,11 +215,11 @@
   <!-- FAQ -->
   <div class="mt-14">
     <h2 class="text-2xl font-extrabold text-slate-900 mb-5">Dropshipping FAQ (2026)</h2>
-    <div class="space-y-3" id="faq">
-      <details class="bg-white rounded-lg border border-slate-200 p-4"><summary class="font-semibold cursor-pointer">Is dropshipping still profitable in 2026?</summary><p class="mt-2 text-sm text-slate-600">Yes — but the winners focus on fast US/EU shipping suppliers, strong branding, and a defensible niche rather than generic, slow AliExpress products. Our <a href="#" onclick="nav('guides');return false" class="text-teal-700 underline">2026 starter guide</a> walks through it.</p></details>
-      <details class="bg-white rounded-lg border border-slate-200 p-4"><summary class="font-semibold cursor-pointer">How much does it cost to start?</summary><p class="mt-2 text-sm text-slate-600">Under $100/month is realistic: an ecommerce plan, a supplier app like Spocket or Zendrop, and a domain. Many <a href="#" onclick="nav('tools');return false" class="text-teal-700 underline">tools</a> have free tiers for testing products first.</p></details>
-      <details class="bg-white rounded-lg border border-slate-200 p-4"><summary class="font-semibold cursor-pointer">Which supplier has the fastest shipping?</summary><p class="mt-2 text-sm text-slate-600">Suppliers with US/EU warehouses — Spocket, Zendrop, and Printful — typically deliver in 2–7 days. Filter by shipping speed in the <a href="#" onclick="nav('directory');return false" class="text-teal-700 underline">supplier directory</a>.</p></details>
-      <details class="bg-white rounded-lg border border-slate-200 p-4"><summary class="font-semibold cursor-pointer">Do I need an LLC to start dropshipping?</summary><p class="mt-2 text-sm text-slate-600">You can start as a sole proprietor in most regions, but an LLC is recommended once you have consistent revenue. It protects your personal assets and adds credibility with suppliers.</p></details>
+    <div class="space-y-3">
+      <details class="bg-white rounded-lg border border-slate-200 p-4"><summary class="font-semibold cursor-pointer text-slate-900">Is dropshipping still profitable in 2026?</summary><p class="mt-2 text-sm text-slate-600">Yes — the winners focus on fast US/EU shipping, strong branding, and a defensible niche. Our <a href="#" onclick="nav('guides');return false" class="text-teal-700 underline">2026 starter guide</a> walks through exactly how.</p></details>
+      <details class="bg-white rounded-lg border border-slate-200 p-4"><summary class="font-semibold cursor-pointer text-slate-900">How much does it cost to start?</summary><p class="mt-2 text-sm text-slate-600">Under $100/month is realistic: an ecommerce plan, a supplier app like Spocket or Zendrop, and a domain. Many <a href="#" onclick="nav('tools');return false" class="text-teal-700 underline">tools</a> have free tiers.</p></details>
+      <details class="bg-white rounded-lg border border-slate-200 p-4"><summary class="font-semibold cursor-pointer text-slate-900">Which supplier has the fastest shipping?</summary><p class="mt-2 text-sm text-slate-600">Suppliers with US/EU warehouses — Spocket, Zendrop, and Printful — typically deliver in 2–7 days. Filter by speed in the <a href="#" onclick="nav('directory');return false" class="text-teal-700 underline">supplier directory</a>.</p></details>
+      <details class="bg-white rounded-lg border border-slate-200 p-4"><summary class="font-semibold cursor-pointer text-slate-900">Do I need an LLC to start dropshipping?</summary><p class="mt-2 text-sm text-slate-600">You can start as a sole proprietor, but an LLC is recommended once you have consistent revenue — it protects your personal assets and adds credibility with suppliers and platforms.</p></details>
     </div>
   </div>
 </section>
@@ -260,34 +232,45 @@
     <h1 class="text-3xl font-extrabold text-slate-900">2026 Dropshipping Supplier Directory</h1>
     <span class="text-xs bg-teal-50 text-teal-700 px-3 py-1 rounded-full font-semibold">Last updated: June 2026</span>
   </div>
-  <p class="mt-2 text-slate-600 max-w-3xl">Search and filter vetted suppliers by region, niche, integration, and shipping speed. Listings marked <span class="text-teal-700 font-semibold">Partner</span> are affiliate partners — always disclosed. New to sourcing? Start with our <a href="#" onclick="nav('guides');return false" class="text-teal-700 underline">supplier guide</a>.</p>
+  <p class="mt-2 text-slate-600 max-w-3xl">Search and filter vetted suppliers by region, niche, and shipping speed. Listings marked <span class="text-teal-700 font-semibold">Partner ✓</span> are affiliate partners — always disclosed. New? Start with our <a href="#" onclick="nav('guides');return false" class="text-teal-700 underline">supplier guide</a>.</p>
 
   <!-- Filters -->
-  <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-    <input id="searchBox" oninput="renderDirectory()" placeholder="Search suppliers…" class="border border-slate-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-teal-500 outline-none">
-    <select id="regionFilter" onchange="renderDirectory()" class="border border-slate-300 rounded-lg px-3 py-2">
+  <div class="mt-6 grid grid-cols-2 lg:grid-cols-5 gap-3">
+    <input id="searchBox" oninput="renderDirectory()" placeholder="Search suppliers…" class="col-span-2 lg:col-span-1 border border-slate-300 rounded-lg px-3 py-2.5 focus:ring-2 focus:ring-teal-500 outline-none text-sm">
+    <select id="regionFilter" onchange="renderDirectory()" class="border border-slate-300 rounded-lg px-3 py-2.5 text-sm">
       <option value="">All Regions</option><option>US</option><option>EU</option><option>US/EU</option><option>Global</option>
     </select>
-    <select id="nicheFilter" onchange="renderDirectory()" class="border border-slate-300 rounded-lg px-3 py-2">
+    <select id="nicheFilter" onchange="renderDirectory()" class="border border-slate-300 rounded-lg px-3 py-2.5 text-sm">
       <option value="">All Niches</option><option>General</option><option>Print on Demand</option><option>Fashion</option><option>Home &amp; Garden</option><option>Beauty</option><option>Electronics</option>
     </select>
-    <select id="shipFilter" onchange="renderDirectory()" class="border border-slate-300 rounded-lg px-3 py-2">
-      <option value="">Any Shipping Speed</option><option value="fast">Fast (2–7 days)</option><option value="medium">Medium (7–15 days)</option>
+    <select id="shipFilter" onchange="renderDirectory()" class="border border-slate-300 rounded-lg px-3 py-2.5 text-sm">
+      <option value="">Any Speed</option><option value="fast">Fast (2–7 days)</option><option value="medium">Medium (7–15 days)</option>
+    </select>
+    <select id="sortBy" onchange="renderDirectory()" class="border border-slate-300 rounded-lg px-3 py-2.5 text-sm">
+      <option value="">Sort: Default</option>
+      <option value="ship">Fastest Shipping</option>
+      <option value="region">US/EU First</option>
+      <option value="name">A–Z</option>
     </select>
   </div>
 
-  <!-- AdSense: Directory Top Leaderboard -->
+  <!-- AdSense: Directory -->
   <div class="ad-wrap my-6">
     <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-3024315445700130" data-ad-slot="1000000002" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <div class="mt-2 overflow-x-auto bg-white rounded-xl border border-slate-200">
+  <div class="mt-2 overflow-x-auto bg-white rounded-xl border border-slate-200 -mx-4 sm:mx-0">
     <table class="w-full text-sm">
       <thead class="bg-slate-100 text-slate-600 text-left">
         <tr>
-          <th class="px-4 py-3">Supplier</th><th class="px-4 py-3">Region</th><th class="px-4 py-3">Niche</th>
-          <th class="px-4 py-3">Shipping Speed</th><th class="px-4 py-3">Integrations</th><th class="px-4 py-3">Status</th><th class="px-4 py-3"></th>
+          <th class="px-4 py-3">Supplier</th>
+          <th class="px-4 py-3 mobile-hide">Region</th>
+          <th class="px-4 py-3 mobile-hide">Niche</th>
+          <th class="px-4 py-3">Shipping</th>
+          <th class="px-4 py-3 mobile-hide">Integrations</th>
+          <th class="px-4 py-3 mobile-hide">Status</th>
+          <th class="px-4 py-3"></th>
         </tr>
       </thead>
       <tbody id="directoryBody"></tbody>
@@ -298,19 +281,19 @@
   <!-- Submit supplier -->
   <div class="mt-10 bg-white rounded-xl border border-slate-200 p-6 max-w-2xl">
     <h2 class="text-xl font-bold text-slate-900">Submit Your Supplier</h2>
-    <p class="text-sm text-slate-600 mt-1">Run a vetted dropshipping supply business? Submit it and our team will review it for inclusion in the directory.</p>
+    <p class="text-sm text-slate-600 mt-1">Run a vetted dropshipping supply business? Submit it for review and inclusion in the directory.</p>
     <form onsubmit="submitSupplier(event)" class="mt-4">
       <div data-form-body class="grid sm:grid-cols-2 gap-3">
-        <input required name="name" placeholder="Supplier name" class="border border-slate-300 rounded-lg px-3 py-2">
-        <input required name="region" placeholder="Region (US/EU/Global)" class="border border-slate-300 rounded-lg px-3 py-2">
-        <input required name="niche" placeholder="Niche" class="border border-slate-300 rounded-lg px-3 py-2">
-        <input required name="url" placeholder="Website URL" class="border border-slate-300 rounded-lg px-3 py-2">
-        <button class="sm:col-span-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2.5 rounded-lg">Submit for Review</button>
+        <input required name="name" placeholder="Supplier name" class="border border-slate-300 rounded-lg px-3 py-2.5 text-sm">
+        <input required name="region" placeholder="Region (US/EU/Global)" class="border border-slate-300 rounded-lg px-3 py-2.5 text-sm">
+        <input required name="niche" placeholder="Niche" class="border border-slate-300 rounded-lg px-3 py-2.5 text-sm">
+        <input required name="url" placeholder="Website URL" class="border border-slate-300 rounded-lg px-3 py-2.5 text-sm">
+        <button class="sm:col-span-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 rounded-lg">Submit for Review</button>
       </div>
       <div data-form-success class="hidden text-center py-6">
         <div class="text-3xl">✅</div>
-        <p class="mt-2 font-bold text-slate-900">Thanks — your supplier was submitted for review!</p>
-        <p class="mt-1 text-sm text-slate-600">We'll evaluate it for shipping speed, integrations, and reliability. Approved suppliers appear in the directory.</p>
+        <p class="mt-2 font-bold text-slate-900">Submitted for review!</p>
+        <p class="mt-1 text-sm text-slate-600">We'll evaluate shipping speed, integrations, and reliability before adding it to the directory.</p>
       </div>
     </form>
   </div>
@@ -321,27 +304,33 @@
 <!-- ============================================================= -->
 <section x-section="tools">
   <h1 class="text-3xl font-extrabold text-slate-900">Best Dropshipping Tools &amp; Affiliate Platforms (2026)</h1>
-  <p class="mt-2 text-slate-600 max-w-3xl">Honest comparisons of the top platforms. Links below are affiliate links — we only recommend tools we believe deliver real value. <a href="#" onclick="nav('legal');return false" class="text-teal-700 underline">Full disclosure</a>. Not sure where to start? See <a href="#" onclick="nav('guides');return false" class="text-teal-700 underline">how to start dropshipping in 2026</a>.</p>
+  <p class="mt-2 text-slate-600 max-w-3xl">Honest comparisons of the top platforms. Links are affiliate links — we only recommend tools we believe deliver real value. <a href="#" onclick="nav('legal');return false" class="text-teal-700 underline">Full disclosure</a>. Not sure where to start? See <a href="#" onclick="nav('guides');return false" class="text-teal-700 underline">how to start dropshipping in 2026</a>.</p>
 
-  <div class="mt-6 overflow-x-auto bg-white rounded-xl border border-slate-200">
+  <div class="mt-6 overflow-x-auto bg-white rounded-xl border border-slate-200 -mx-4 sm:mx-0">
     <table class="w-full text-sm">
       <thead class="bg-slate-100 text-slate-600 text-left">
-        <tr><th class="px-4 py-3">Platform</th><th class="px-4 py-3">Best For</th><th class="px-4 py-3">Commission</th><th class="px-4 py-3">Free Tier</th><th class="px-4 py-3"></th></tr>
+        <tr>
+          <th class="px-4 py-3">Platform</th>
+          <th class="px-4 py-3 mobile-hide">Best For</th>
+          <th class="px-4 py-3">Commission</th>
+          <th class="px-4 py-3 mobile-hide">Free Tier</th>
+          <th class="px-4 py-3"></th>
+        </tr>
       </thead>
       <tbody class="divide-y divide-slate-100">
-        <tr><td class="px-4 py-3 font-semibold">Spocket</td><td class="px-4 py-3">US/EU fast shipping</td><td class="px-4 py-3 text-teal-700 font-bold">20–30% recurring</td><td class="px-4 py-3">Yes</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://get.spocket.co/n9wumf7wnm7s" class="text-teal-700 font-semibold">Visit →</a></td></tr>
-        <tr><td class="px-4 py-3 font-semibold">Printful</td><td class="px-4 py-3">Print on demand</td><td class="px-4 py-3 text-teal-700 font-bold">10% recurring</td><td class="px-4 py-3">Yes</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://www.printful.com/a/15080868:11271d06dfc2461bb730302cb8e4548b" class="text-teal-700 font-semibold">Visit →</a></td></tr>
-        <tr><td class="px-4 py-3 font-semibold">Printify</td><td class="px-4 py-3">POD margins</td><td class="px-4 py-3 text-teal-700 font-bold">Up to $25/referral</td><td class="px-4 py-3">Yes</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://try.printify.com/igmgzli7a63y" class="text-teal-700 font-semibold">Visit →</a></td></tr>
-        <tr><td class="px-4 py-3 font-semibold">Zendrop</td><td class="px-4 py-3">AI sourcing + US stock</td><td class="px-4 py-3 text-teal-700 font-bold">High recurring</td><td class="px-4 py-3">Yes</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://zendrop.sjv.io/aN2Y5W" class="text-teal-700 font-semibold">Visit →</a></td></tr>
-        <tr><td class="px-4 py-3 font-semibold">DSers</td><td class="px-4 py-3">AliExpress automation</td><td class="px-4 py-3 text-teal-700 font-bold">Affiliate program</td><td class="px-4 py-3">Yes</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://www.dsers.com/partner/2061640296296742912" class="text-teal-700 font-semibold">Visit →</a></td></tr>
-        <tr><td class="px-4 py-3 font-semibold">CJdropshipping</td><td class="px-4 py-3">Global sourcing</td><td class="px-4 py-3 text-teal-700 font-bold">Per-order payout</td><td class="px-4 py-3">Yes</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://www.cjdropshipping.com" class="text-teal-700 font-semibold">Visit →</a></td></tr>
-        <tr><td class="px-4 py-3 font-semibold">Shopify</td><td class="px-4 py-3">Store platform</td><td class="px-4 py-3 text-teal-700 font-bold">Bounty per referral</td><td class="px-4 py-3">Trial</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://shopify.pxf.io/engJqr" class="text-teal-700 font-semibold">Visit →</a></td></tr>
-        <tr><td class="px-4 py-3 font-semibold">BigCommerce</td><td class="px-4 py-3">Scaling stores</td><td class="px-4 py-3 text-teal-700 font-bold">200% first month</td><td class="px-4 py-3">Trial</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://www.bigcommerce.com" class="text-teal-700 font-semibold">Visit →</a></td></tr>
+        <tr><td class="px-4 py-3 font-semibold">Spocket</td><td class="px-4 py-3 mobile-hide">US/EU fast shipping</td><td class="px-4 py-3 text-teal-700 font-bold">20–30% recurring</td><td class="px-4 py-3 mobile-hide">Yes</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://get.spocket.co/n9wumf7wnm7s" class="text-teal-700 font-semibold whitespace-nowrap">Visit →</a></td></tr>
+        <tr><td class="px-4 py-3 font-semibold">Printful</td><td class="px-4 py-3 mobile-hide">Print on demand</td><td class="px-4 py-3 text-teal-700 font-bold">10% recurring</td><td class="px-4 py-3 mobile-hide">Yes</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://www.printful.com/a/15080868:11271d06dfc2461bb730302cb8e4548b" class="text-teal-700 font-semibold whitespace-nowrap">Visit →</a></td></tr>
+        <tr><td class="px-4 py-3 font-semibold">Printify</td><td class="px-4 py-3 mobile-hide">POD margins</td><td class="px-4 py-3 text-teal-700 font-bold">Up to $25/referral</td><td class="px-4 py-3 mobile-hide">Yes</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://try.printify.com/igmgzli7a63y" class="text-teal-700 font-semibold whitespace-nowrap">Visit →</a></td></tr>
+        <tr><td class="px-4 py-3 font-semibold">Zendrop</td><td class="px-4 py-3 mobile-hide">AI sourcing + US stock</td><td class="px-4 py-3 text-teal-700 font-bold">High recurring</td><td class="px-4 py-3 mobile-hide">Yes</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://zendrop.sjv.io/aN2Y5W" class="text-teal-700 font-semibold whitespace-nowrap">Visit →</a></td></tr>
+        <tr><td class="px-4 py-3 font-semibold">DSers</td><td class="px-4 py-3 mobile-hide">AliExpress automation</td><td class="px-4 py-3 text-teal-700 font-bold">Affiliate program</td><td class="px-4 py-3 mobile-hide">Yes</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://www.dsers.com/partner/2061640296296742912" class="text-teal-700 font-semibold whitespace-nowrap">Visit →</a></td></tr>
+        <tr><td class="px-4 py-3 font-semibold">CJdropshipping</td><td class="px-4 py-3 mobile-hide">Global sourcing</td><td class="px-4 py-3 text-teal-700 font-bold">Per-order payout</td><td class="px-4 py-3 mobile-hide">Yes</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://www.cjdropshipping.com" class="text-teal-700 font-semibold whitespace-nowrap">Visit →</a></td></tr>
+        <tr><td class="px-4 py-3 font-semibold">Shopify</td><td class="px-4 py-3 mobile-hide">Store platform</td><td class="px-4 py-3 text-teal-700 font-bold">Bounty per referral</td><td class="px-4 py-3 mobile-hide">Trial</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://shopify.pxf.io/engJqr" class="text-teal-700 font-semibold whitespace-nowrap">Visit →</a></td></tr>
+        <tr><td class="px-4 py-3 font-semibold">BigCommerce</td><td class="px-4 py-3 mobile-hide">Scaling stores</td><td class="px-4 py-3 text-teal-700 font-bold">200% first month</td><td class="px-4 py-3 mobile-hide">Trial</td><td class="px-4 py-3"><a rel="sponsored nofollow" target="_blank" href="https://www.bigcommerce.com" class="text-teal-700 font-semibold whitespace-nowrap">Visit →</a></td></tr>
       </tbody>
     </table>
   </div>
 
-  <!-- AdSense: Tools In-Content -->
+  <!-- AdSense: Tools -->
   <div class="ad-wrap my-8">
     <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-3024315445700130" data-ad-slot="1000000003" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -349,24 +338,24 @@
 
   <!-- Review cards -->
   <h2 class="text-2xl font-extrabold text-slate-900 mt-4 mb-5">In-Depth Reviews</h2>
-  <div class="grid md:grid-cols-3 gap-6">
-    <article class="bg-white rounded-xl border border-slate-200 p-6">
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <article class="bg-white rounded-xl border border-slate-200 p-6 flex flex-col">
       <div class="flex items-center justify-between"><h3 class="font-bold text-lg">Spocket</h3><span class="text-amber-500">★★★★★</span></div>
-      <p class="text-sm text-slate-600 mt-3">The go-to for US &amp; EU suppliers with fast shipping. Deep Shopify/Wix integration and branded invoicing. Best recurring commission in the category.</p>
+      <p class="text-sm text-slate-600 mt-3 flex-1">The go-to for US &amp; EU suppliers with fast shipping. Deep Shopify/Wix integration, branded invoicing, and the best recurring commission in the category.</p>
       <ul class="mt-3 text-sm text-slate-600 space-y-1"><li>✓ 2–7 day US/EU shipping</li><li>✓ 20–30% recurring affiliate payout</li><li>✓ Free plan to browse catalog</li></ul>
-      <a rel="sponsored nofollow" target="_blank" href="https://get.spocket.co/n9wumf7wnm7s" class="mt-4 block text-center bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2.5 rounded-lg">Try Spocket Free →</a>
+      <a rel="sponsored nofollow" target="_blank" href="https://get.spocket.co/n9wumf7wnm7s" class="mt-4 block text-center bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 rounded-lg">Try Spocket Free →</a>
     </article>
-    <article class="bg-white rounded-xl border border-slate-200 p-6">
+    <article class="bg-white rounded-xl border border-slate-200 p-6 flex flex-col">
       <div class="flex items-center justify-between"><h3 class="font-bold text-lg">Printful</h3><span class="text-amber-500">★★★★☆</span></div>
-      <p class="text-sm text-slate-600 mt-3">Premium print-on-demand with global fulfillment centers and strong product quality. Ideal for branded apparel and accessories.</p>
+      <p class="text-sm text-slate-600 mt-3 flex-1">Premium print-on-demand with global fulfillment centers and strong product quality. Ideal for branded apparel and accessories.</p>
       <ul class="mt-3 text-sm text-slate-600 space-y-1"><li>✓ No minimums, white-label</li><li>✓ 10% recurring for 9 months</li><li>✓ 30+ integrations</li></ul>
-      <a rel="sponsored nofollow" target="_blank" href="https://www.printful.com/a/15080868:11271d06dfc2461bb730302cb8e4548b" class="mt-4 block text-center bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2.5 rounded-lg">Try Printful Free →</a>
+      <a rel="sponsored nofollow" target="_blank" href="https://www.printful.com/a/15080868:11271d06dfc2461bb730302cb8e4548b" class="mt-4 block text-center bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 rounded-lg">Try Printful Free →</a>
     </article>
-    <article class="bg-white rounded-xl border border-slate-200 p-6">
+    <article class="bg-white rounded-xl border border-slate-200 p-6 flex flex-col">
       <div class="flex items-center justify-between"><h3 class="font-bold text-lg">Zendrop</h3><span class="text-amber-500">★★★★★</span></div>
-      <p class="text-sm text-slate-600 mt-3">AI-assisted product research with US warehousing for fast domestic delivery and automated fulfillment. Beginner-friendly dashboard.</p>
+      <p class="text-sm text-slate-600 mt-3 flex-1">AI-assisted product research with US warehousing for fast domestic delivery and automated fulfillment. Beginner-friendly dashboard.</p>
       <ul class="mt-3 text-sm text-slate-600 space-y-1"><li>✓ US stock + auto-fulfillment</li><li>✓ AI product finder</li><li>✓ Free plan available</li></ul>
-      <a rel="sponsored nofollow" target="_blank" href="https://zendrop.sjv.io/aN2Y5W" class="mt-4 block text-center bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2.5 rounded-lg">Try Zendrop Free →</a>
+      <a rel="sponsored nofollow" target="_blank" href="https://zendrop.sjv.io/aN2Y5W" class="mt-4 block text-center bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 rounded-lg">Try Zendrop Free →</a>
     </article>
   </div>
 </section>
@@ -376,45 +365,44 @@
 <!-- ============================================================= -->
 <section x-section="guides">
   <h1 class="text-3xl font-extrabold text-slate-900">Guides &amp; Resources</h1>
-  <p class="mt-2 text-slate-600 max-w-3xl">Practical, beginner-friendly playbooks updated for 2026 — written to actually help you build a real store. Ready to act? Jump to the <a href="#" onclick="nav('directory');return false" class="text-teal-700 underline">supplier directory</a> or <a href="#" onclick="nav('tools');return false" class="text-teal-700 underline">tool comparisons</a>.</p>
+  <p class="mt-2 text-slate-600 max-w-3xl">Practical, beginner-friendly playbooks updated for 2026. Ready to act? Jump to the <a href="#" onclick="nav('directory');return false" class="text-teal-700 underline">supplier directory</a> or <a href="#" onclick="nav('tools');return false" class="text-teal-700 underline">tool comparisons</a>.</p>
 
   <div class="mt-8 space-y-10">
-    <article id="guide-start" class="bg-white rounded-xl border border-slate-200 p-7">
+    <article id="guide-start" class="bg-white rounded-xl border border-slate-200 p-6 sm:p-8">
       <h2 class="text-2xl font-bold text-slate-900">How to Start Dropshipping in 2026 (Step-by-Step)</h2>
       <p class="mt-3 text-slate-600">Dropshipping in 2026 rewards focus over hype. Start by choosing a specific niche where you can add real value — reviews, bundles, or expertise — instead of selling the same trending gadget as everyone else. Validate demand with keyword tools and social trends before committing.</p>
-      <p class="mt-3 text-slate-600">Next, pick a fast-shipping supplier. US and EU warehouses (Spocket, Zendrop) cut delivery to 2–7 days, which dramatically reduces refunds and chargebacks compared to overseas-only sourcing. Connect your supplier to a Shopify or BigCommerce store, set healthy margins (aim for 2.5–3x landed cost), and write genuinely useful product pages.</p>
-      <p class="mt-3 text-slate-600">Finally, drive traffic through a mix of short-form video, SEO content, and a small paid-ads test budget. Track unit economics from day one and reinvest only into what proves profitable. Branding and customer experience — not the lowest price — are what survive Google and platform updates in 2026.</p>
-      <p class="mt-3 text-sm text-slate-500">Next: <a href="#" onclick="nav('guides');setTimeout(()=>document.getElementById('guide-suppliers').scrollIntoView({behavior:'smooth'}),60);return false" class="text-teal-700 underline">Best US/EU fast-shipping suppliers →</a></p>
+      <p class="mt-3 text-slate-600">Next, pick a fast-shipping supplier. US and EU warehouses (<a href="#" onclick="nav('directory');return false" class="text-teal-700 underline">Spocket, Zendrop</a>) cut delivery to 2–7 days, dramatically reducing refunds compared to overseas-only sourcing. Connect to Shopify or BigCommerce, set healthy margins (aim for 2.5–3x landed cost), and write genuinely useful product pages.</p>
+      <p class="mt-3 text-slate-600">Finally, drive traffic through short-form video, SEO content, and a small paid-ads test budget. Track unit economics from day one. Branding and customer experience — not the lowest price — are what survive Google updates in 2026.</p>
+      <p class="mt-4 text-sm text-slate-500">Next: <a href="#" onclick="nav('guides');setTimeout(()=>document.getElementById('guide-suppliers').scrollIntoView({behavior:'smooth'}),60);return false" class="text-teal-700 underline">Best US/EU fast-shipping suppliers →</a></p>
     </article>
 
-    <article id="guide-suppliers" class="bg-white rounded-xl border border-slate-200 p-7">
+    <article id="guide-suppliers" class="bg-white rounded-xl border border-slate-200 p-6 sm:p-8">
       <h2 class="text-2xl font-bold text-slate-900">Best US/EU Fast-Shipping Suppliers for 2026</h2>
-      <p class="mt-3 text-slate-600">Shipping speed is the single biggest lever for customer satisfaction. Suppliers with domestic warehouses let you advertise 2–7 day delivery, matching marketplace expectations. Spocket leads for general and boutique products across the US and EU; Zendrop pairs US stock with automated fulfillment; Printful and Printify cover print-on-demand with regional fulfillment centers.</p>
-      <p class="mt-3 text-slate-600">When comparing suppliers, weigh integration depth, branded packaging, real shipping times (not just advertised ones), and return handling. Our <a href="#" onclick="nav('directory');return false" class="text-teal-700 underline">supplier directory</a> lets you filter by exactly these factors, and our <a href="#" onclick="nav('tools');return false" class="text-teal-700 underline">tools page</a> compares commissions.</p>
+      <p class="mt-3 text-slate-600">Shipping speed is the single biggest lever for customer satisfaction. Domestic warehouses let you advertise 2–7 day delivery, matching marketplace expectations. Spocket leads for general and boutique products; Zendrop pairs US stock with automated fulfillment; Printful and Printify cover print-on-demand with regional centers.</p>
+      <p class="mt-3 text-slate-600">When comparing suppliers, weigh integration depth, branded packaging, real shipping times (not advertised ones), and return handling. Our <a href="#" onclick="nav('directory');return false" class="text-teal-700 underline">supplier directory</a> lets you filter by all these factors, and our <a href="#" onclick="nav('tools');return false" class="text-teal-700 underline">tools page</a> compares commissions.</p>
     </article>
 
-    <!-- AdSense: Guides In-Content -->
     <div class="ad-wrap">
       <ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-3024315445700130" data-ad-slot="1000000004" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
-    <article id="guide-ai" class="bg-white rounded-xl border border-slate-200 p-7">
+    <article id="guide-ai" class="bg-white rounded-xl border border-slate-200 p-6 sm:p-8">
       <h2 class="text-2xl font-bold text-slate-900">Best AI Tools for Dropshipping in 2026</h2>
-      <p class="mt-3 text-slate-600">AI now touches every stage of the dropshipping workflow. Product-research assistants surface winning items from real demand signals; copy tools draft SEO product descriptions; and image tools generate clean lifestyle visuals. Zendrop and several platforms bundle AI product finders directly into their dashboards.</p>
-      <p class="mt-3 text-slate-600">Use AI to accelerate research and content, but keep a human in the loop for fact-checking, brand voice, and compliance. The stores that win in 2026 use AI for leverage while maintaining genuine quality and accuracy.</p>
+      <p class="mt-3 text-slate-600">AI now touches every stage of the workflow. Product-research assistants surface winning items from real demand signals; copy tools draft SEO product descriptions; image tools generate clean lifestyle visuals. Zendrop and several platforms bundle AI finders directly into their dashboards.</p>
+      <p class="mt-3 text-slate-600">Use AI to accelerate research and content, but keep a human in the loop for fact-checking, brand voice, and compliance. The stores that win in 2026 use AI for leverage while maintaining genuine quality.</p>
     </article>
 
-    <article id="guide-pod" class="bg-white rounded-xl border border-slate-200 p-7">
+    <article id="guide-pod" class="bg-white rounded-xl border border-slate-200 p-6 sm:p-8">
       <h2 class="text-2xl font-bold text-slate-900">Print on Demand vs Traditional Dropshipping</h2>
-      <p class="mt-3 text-slate-600">Print on demand (POD) lets you sell custom-designed products — apparel, mugs, posters — with zero inventory and built-in branding, but margins are thinner and design skill matters. Traditional dropshipping offers broader catalogs and faster sourcing of proven products, but differentiation is harder.</p>
-      <p class="mt-3 text-slate-600">Many successful 2026 stores blend both: a POD line for branded, defensible products and a curated dropship catalog for proven sellers. Choose based on your strengths — design and brand-building favor POD; merchandising and ads favor traditional. Compare POD platforms on our <a href="#" onclick="nav('tools');return false" class="text-teal-700 underline">tools page</a>.</p>
+      <p class="mt-3 text-slate-600">POD lets you sell custom-designed products with zero inventory and built-in branding, but margins are thinner and design skill matters. Traditional dropshipping offers broader catalogs and faster sourcing, but differentiation is harder.</p>
+      <p class="mt-3 text-slate-600">Many successful 2026 stores blend both: a POD line for branded, defensible products and a curated dropship catalog for proven sellers. Compare POD platforms on our <a href="#" onclick="nav('tools');return false" class="text-teal-700 underline">tools page</a>.</p>
     </article>
 
-    <article id="guide-mistakes" class="bg-white rounded-xl border border-slate-200 p-7">
+    <article id="guide-mistakes" class="bg-white rounded-xl border border-slate-200 p-6 sm:p-8">
       <h2 class="text-2xl font-bold text-slate-900">7 Dropshipping Mistakes to Avoid in 2026</h2>
       <p class="mt-3 text-slate-600">Common pitfalls still sink new stores: chasing saturated trends, ignoring shipping times, thin product pages, no clear niche, underpricing, neglecting customer service, and skipping legal basics like an LLC and proper policies. Avoiding these puts you ahead of most beginners before you spend a dollar on ads.</p>
-      <p class="mt-3 text-sm text-slate-500">Read next on the <a href="#" onclick="nav('blog');return false" class="text-teal-700 underline">blog →</a></p>
+      <p class="mt-4 text-sm text-slate-500">Read next on the <a href="#" onclick="nav('blog');return false" class="text-teal-700 underline">blog →</a></p>
     </article>
   </div>
 </section>
@@ -423,26 +411,201 @@
 <!-- BLOG -->
 <!-- ============================================================= -->
 <section x-section="blog">
-  <h1 class="text-3xl font-extrabold text-slate-900">DropShipCentral Blog</h1>
-  <p class="mt-2 text-slate-600">Fresh takes on suppliers, tools, and trends. Looking for the basics? Start with our <a href="#" onclick="nav('guides');return false" class="text-teal-700 underline">guides</a>.</p>
-  <div class="mt-8 grid md:grid-cols-2 gap-6">
-    <article class="bg-white rounded-xl border border-slate-200 overflow-hidden">
-      <div class="h-40 bg-gradient-to-br from-teal-500 to-blue-600"></div>
-      <div class="p-6"><span class="text-xs font-semibold text-teal-700">TRENDS</span><h3 class="font-bold text-lg mt-1">5 Winning Product Categories for Spring 2026</h3><p class="text-sm text-slate-600 mt-2">Data-backed niches with rising demand and healthy margins for the new season.</p><a href="#" onclick="nav('guides');return false" class="text-sm font-semibold text-teal-700 mt-3 inline-block">Read more →</a></div>
-    </article>
-    <article class="bg-white rounded-xl border border-slate-200 overflow-hidden">
-      <div class="h-40 bg-gradient-to-br from-blue-500 to-indigo-600"></div>
-      <div class="p-6"><span class="text-xs font-semibold text-teal-700">SUPPLIERS</span><h3 class="font-bold text-lg mt-1">Spocket vs Zendrop: Which Wins in 2026?</h3><p class="text-sm text-slate-600 mt-2">A head-to-head on shipping speed, catalog, pricing, and ease of use.</p><a href="#" onclick="nav('tools');return false" class="text-sm font-semibold text-teal-700 mt-3 inline-block">Read more →</a></div>
-    </article>
-    <article class="bg-white rounded-xl border border-slate-200 overflow-hidden">
-      <div class="h-40 bg-gradient-to-br from-emerald-500 to-teal-600"></div>
-      <div class="p-6"><span class="text-xs font-semibold text-teal-700">AI</span><h3 class="font-bold text-lg mt-1">How AI Product Research Cuts Testing Costs</h3><p class="text-sm text-slate-600 mt-2">Use AI signals to shortlist winners before spending on ads.</p><a href="#" onclick="nav('guides');return false" class="text-sm font-semibold text-teal-700 mt-3 inline-block">Read more →</a></div>
-    </article>
-    <article class="bg-white rounded-xl border border-slate-200 overflow-hidden">
-      <div class="h-40 bg-gradient-to-br from-cyan-500 to-blue-600"></div>
-      <div class="p-6"><span class="text-xs font-semibold text-teal-700">GUIDE</span><h3 class="font-bold text-lg mt-1">Setting Up Your First Store in Under an Hour</h3><p class="text-sm text-slate-600 mt-2">A streamlined checklist to launch fast without cutting corners.</p><a href="#" onclick="nav('directory');return false" class="text-sm font-semibold text-teal-700 mt-3 inline-block">Read more →</a></div>
+
+  <!-- Blog index -->
+  <div id="blog-index">
+    <h1 class="text-3xl font-extrabold text-slate-900">DropShipCentral Blog</h1>
+    <p class="mt-2 text-slate-600">In-depth takes on suppliers, tools, and trends for 2026. Looking for fundamentals? Start with our <a href="#" onclick="nav('guides');return false" class="text-teal-700 underline">guides</a>.</p>
+    <div class="mt-8 grid sm:grid-cols-2 gap-6">
+      <article class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col">
+        <div class="h-40 bg-gradient-to-br from-teal-500 to-blue-600"></div>
+        <div class="p-6 flex flex-col flex-1">
+          <span class="tag bg-teal-100 text-teal-700">TRENDS</span>
+          <h3 class="font-bold text-lg mt-2">5 Winning Product Categories for Spring 2026</h3>
+          <p class="text-sm text-slate-600 mt-2 flex-1">Data-backed niches with rising demand and healthy margins — including the suppliers best positioned to fill them.</p>
+          <button onclick="showPost('trends')" class="text-sm font-semibold text-teal-700 mt-4 text-left hover:underline">Read full article →</button>
+        </div>
+      </article>
+      <article class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col">
+        <div class="h-40 bg-gradient-to-br from-blue-500 to-indigo-600"></div>
+        <div class="p-6 flex flex-col flex-1">
+          <span class="tag bg-blue-100 text-blue-700">SUPPLIERS</span>
+          <h3 class="font-bold text-lg mt-2">Spocket vs Zendrop: Which Wins in 2026?</h3>
+          <p class="text-sm text-slate-600 mt-2 flex-1">A head-to-head on shipping speed, catalog depth, pricing, and ease of use for new and scaling stores.</p>
+          <button onclick="showPost('spocket-vs-zendrop')" class="text-sm font-semibold text-teal-700 mt-4 text-left hover:underline">Read full article →</button>
+        </div>
+      </article>
+      <article class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col">
+        <div class="h-40 bg-gradient-to-br from-emerald-500 to-teal-600"></div>
+        <div class="p-6 flex flex-col flex-1">
+          <span class="tag bg-emerald-100 text-emerald-700">AI</span>
+          <h3 class="font-bold text-lg mt-2">How AI Product Research Cuts Testing Costs</h3>
+          <p class="text-sm text-slate-600 mt-2 flex-1">Use AI signals to shortlist winning products before spending on ads — with specific tools and prompts that work in 2026.</p>
+          <button onclick="showPost('ai-research')" class="text-sm font-semibold text-teal-700 mt-4 text-left hover:underline">Read full article →</button>
+        </div>
+      </article>
+      <article class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col">
+        <div class="h-40 bg-gradient-to-br from-cyan-500 to-blue-600"></div>
+        <div class="p-6 flex flex-col flex-1">
+          <span class="tag bg-cyan-100 text-cyan-700">GUIDE</span>
+          <h3 class="font-bold text-lg mt-2">Setting Up Your First Store in Under an Hour</h3>
+          <p class="text-sm text-slate-600 mt-2 flex-1">A streamlined checklist to launch a working dropshipping store fast — without cutting corners on what actually matters.</p>
+          <button onclick="showPost('first-store')" class="text-sm font-semibold text-teal-700 mt-4 text-left hover:underline">Read full article →</button>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- ===== FULL ARTICLE: 5 Winning Product Categories ===== -->
+  <div id="post-trends" class="hidden">
+    <button onclick="backToBlog()" class="flex items-center gap-2 text-sm text-slate-500 hover:text-teal-700 mb-6">← Back to Blog</button>
+    <article class="bg-white rounded-xl border border-slate-200 p-6 sm:p-10 max-w-3xl">
+      <span class="tag bg-teal-100 text-teal-700">TRENDS</span>
+      <h1 class="text-3xl font-extrabold text-slate-900 mt-3 leading-tight">5 Winning Product Categories for Spring 2026</h1>
+      <p class="mt-2 text-sm text-slate-400">Published June 2026 · 6 min read · <a href="#" onclick="nav('directory');return false" class="text-teal-700 underline">Browse the directory →</a></p>
+      <div class="prose mt-6">
+        <p>Spring 2026 is shaping up to be one of the strongest quarters for independent dropshippers in years. Consumer spending has shifted decisively toward fast delivery, quality branding, and niche-specific products — all areas where a well-run dropshipping store has a genuine edge over generic marketplaces. Here are five product categories worth serious attention right now.</p>
+
+        <h3>1. Home Office & Ergonomic Accessories</h3>
+        <p>Hybrid work has become permanent for a large share of the workforce, and the home office upgrade cycle has never stopped. Products like monitor arms, cable management systems, ergonomic desk pads, and under-desk organizers continue to sell year-round with strong average order values ($30–$80). US warehouse availability through <a href="#" onclick="nav('directory');return false">Spocket</a> and Syncee makes 5–7 day delivery achievable, which dramatically reduces cart abandonment on considered purchases.</p>
+        <p><strong>Why it wins in 2026:</strong> Low return rates, repeat buyers upgrading over time, and strong YouTube/TikTok content angles. Search demand is steady, not trend-dependent.</p>
+
+        <h3>2. Pet Wellness & Premium Accessories</h3>
+        <p>Pet ownership hit record levels post-pandemic and hasn't retreated. More importantly, pet owners are spending more per animal — on premium food toppers, orthopedic beds, GPS trackers, and anxiety-reduction products. The premiumisation trend mirrors what happened in human health and wellness a decade ago. Margins are healthy, and the customer lifetime value is exceptionally high.</p>
+        <p><strong>Suppliers to consider:</strong> CJdropshipping and Spocket both carry strong pet product catalogs. Focus on differentiated SKUs — avoid competing on generic pet bowls already sold at Walmart.</p>
+
+        <h3>3. Sustainable & Eco-Friendly Kitchen Products</h3>
+        <p>Reusable food storage, beeswax wraps, bamboo utensil sets, and compostable cleaning products are experiencing consistent 15–20% YoY search growth heading into 2026. The buyer is typically a 28–45 year old homeowner with above-average income — a profile that converts well on paid social and tolerates slightly higher price points when the sustainability story is genuine.</p>
+        <p><strong>Why now:</strong> Regulatory pressure on single-use plastics in the EU is creating organic urgency that advertising alone can't manufacture. If you stock the right products, the moment comes to you.</p>
+
+        <h3>4. Custom Print-on-Demand Apparel for Micro-Niches</h3>
+        <p>The broad "custom t-shirt" market is saturated. The opportunity in 2026 is ultra-specific: think "golden retriever dad" hoodies, pickleball apparel, or nurse practitioner-specific scrub accessories. With <a href="#" onclick="showPost('spocket-vs-zendrop');return false" class="text-teal-700">Printful</a> and Printify handling fulfillment from US/EU, you can serve these niches with 3–7 day delivery and zero inventory. The content side is also easier — micro-niche communities are highly engaged and actively share.</p>
+
+        <h3>5. Travel & Outdoor Gear (Compact & Packable)</h3>
+        <p>International travel volumes have fully recovered and domestic outdoor recreation remains elevated. Compact, packable gear — travel pillows, collapsible water bottles, lightweight organizers, portable phone chargers — sells consistently from February through August and picks back up before the holiday season. The shipping profile is excellent: small, light, and easy to warehouse in the US.</p>
+        <p><strong>Best-fit suppliers:</strong> Inventory Source has strong electronics and travel accessories coverage. Spocket carries a curated selection from US-based brands.</p>
+
+        <h3>The Common Thread</h3>
+        <p>Every category above shares three traits: identifiable buyer with clear intent, US/EU supplier availability for fast shipping, and a content angle that works organically on video platforms. If your current products don't tick all three boxes, it's worth running them through this filter before your next sourcing session.</p>
+        <p>Ready to find suppliers in these categories? <a href="#" onclick="nav('directory');return false">Browse the supplier directory →</a></p>
+      </div>
     </article>
   </div>
+
+  <!-- ===== FULL ARTICLE: Spocket vs Zendrop ===== -->
+  <div id="post-spocket-vs-zendrop" class="hidden">
+    <button onclick="backToBlog()" class="flex items-center gap-2 text-sm text-slate-500 hover:text-teal-700 mb-6">← Back to Blog</button>
+    <article class="bg-white rounded-xl border border-slate-200 p-6 sm:p-10 max-w-3xl">
+      <span class="tag bg-blue-100 text-blue-700">SUPPLIERS</span>
+      <h1 class="text-3xl font-extrabold text-slate-900 mt-3 leading-tight">Spocket vs Zendrop: Which Wins in 2026?</h1>
+      <p class="mt-2 text-sm text-slate-400">Published June 2026 · 8 min read · Affiliate links disclosed</p>
+      <div class="prose mt-6">
+        <p>Spocket and Zendrop are the two most-recommended dropshipping suppliers for sellers who prioritise fast US and EU delivery. Both have strong platform integrations, free tiers, and active affiliate programs. But they're built for slightly different operators, and choosing the wrong one early costs time and money. Here's the honest 2026 comparison.</p>
+
+        <h3>Catalog & Product Selection</h3>
+        <p><strong>Spocket</strong> focuses on curated, independently-verified suppliers — mostly small-to-mid-sized brands in the US and EU. The catalog skews toward boutique, lifestyle, and home goods. You won't find 10 million SKUs, but what's there has been manually reviewed. This curation means fewer duds and a higher average product quality signal.</p>
+        <p><strong>Zendrop</strong> has a broader catalog with strong coverage in general merchandise, beauty, and consumer electronics. Its AI-powered product research tool actively surfaces trending items from real sales data, which is a genuine edge for sellers who don't yet know what to sell. The US warehouse stock is more limited than Spocket's but growing steadily.</p>
+        <p><strong>Winner: Spocket</strong> for niche, quality-driven catalogs. <strong>Zendrop</strong> for volume and trend discovery.</p>
+
+        <h3>Shipping Speed</h3>
+        <p>Spocket's core value proposition is shipping speed. US and EU supplier products ship from domestic warehouses, with the majority arriving in 2–5 days. The platform clearly labels which products ship from US/EU vs. international, so you always know what you're getting.</p>
+        <p>Zendrop offers US-warehoused products with similar delivery windows, but stock availability varies more by SKU. Its auto-fulfillment feature is genuinely excellent — once connected to Shopify, orders process and ship without manual intervention.</p>
+        <p><strong>Winner: Effectively tied</strong>, with Spocket having a slightly deeper US/EU inventory and Zendrop offering better automation.</p>
+
+        <h3>Pricing & Margins</h3>
+        <p>Spocket's free plan lets you browse but not import products. Paid plans start around $39/month and unlock the full catalog. Margins on Spocket products tend to be healthy — the supplier network is built around brand-forward products with real pricing discipline.</p>
+        <p>Zendrop has a free plan that allows importing up to 25 products. Paid plans start lower than Spocket's. Product margins vary more widely given the broader catalog, but the platform's sourcing team will actively find products at specific price points on request.</p>
+        <p><strong>Winner: Zendrop</strong> on entry cost. <strong>Spocket</strong> on consistent margin quality.</p>
+
+        <h3>Platform Integration</h3>
+        <p>Both integrate natively with Shopify. Spocket also connects to Wix and WooCommerce. Zendrop is primarily Shopify-focused but expanding. If you're on Shopify, either works seamlessly. If you're on Wix or a less common platform, Spocket is the safer choice.</p>
+
+        <h3>Affiliate Commission</h3>
+        <p>Spocket pays 20–30% recurring commission — among the highest in the category. Zendrop's program pays a recurring percentage that's competitive but slightly lower. For a content or affiliate site, Spocket's commission structure compounds significantly over time.</p>
+
+        <h3>Verdict</h3>
+        <p><strong>Choose Spocket if:</strong> You want curated, fast-shipping US/EU products, you're building a brand around product quality, or you're running a content site where affiliate commission matters.</p>
+        <p><strong>Choose Zendrop if:</strong> You want AI product discovery, a lower barrier to entry, or you're testing multiple niches and need volume before narrowing down.</p>
+        <p>Most successful stores eventually test both. Start with the one that matches your current phase. You can always add the second once your first niche is validated.</p>
+        <p><a href="https://get.spocket.co/n9wumf7wnm7s" rel="sponsored nofollow" target="_blank" class="text-teal-700">Try Spocket free →</a> &nbsp;|&nbsp; <a href="https://zendrop.sjv.io/aN2Y5W" rel="sponsored nofollow" target="_blank" class="text-teal-700">Try Zendrop free →</a></p>
+      </div>
+    </article>
+  </div>
+
+  <!-- ===== FULL ARTICLE: AI Product Research ===== -->
+  <div id="post-ai-research" class="hidden">
+    <button onclick="backToBlog()" class="flex items-center gap-2 text-sm text-slate-500 hover:text-teal-700 mb-6">← Back to Blog</button>
+    <article class="bg-white rounded-xl border border-slate-200 p-6 sm:p-10 max-w-3xl">
+      <span class="tag bg-emerald-100 text-emerald-700">AI</span>
+      <h1 class="text-3xl font-extrabold text-slate-900 mt-3 leading-tight">How AI Product Research Cuts Testing Costs in 2026</h1>
+      <p class="mt-2 text-sm text-slate-400">Published June 2026 · 7 min read</p>
+      <div class="prose mt-6">
+        <p>The old model of dropshipping product research was expensive: buy a broad catalog, run test ads on 20 products, kill the 18 that don't convert, and scale the two that do. At $50–$100 per product test on paid social, that's a $1,000–$2,000 education per winning product. In 2026, AI compresses that learning curve significantly — not by replacing testing, but by making your shortlist far more precise before you spend a cent.</p>
+
+        <h3>What AI Can (and Can't) Tell You</h3>
+        <p>AI tools excel at pattern recognition across large datasets: search trends, social engagement velocity, competitor ad libraries, and review sentiment. What they can't reliably do is predict whether <em>your specific audience</em> will respond to <em>your specific creative</em>. Use AI to get from 100 candidate products down to 5–10 worth testing. The testing still happens — it just covers fewer, better-qualified candidates.</p>
+
+        <h3>The Fastest Tools in 2026</h3>
+        <p><strong>ChatGPT / Claude (with web browsing):</strong> Use these for structured product research prompts. Ask for emerging niches with rising search volume, underserved buyer demographics, or product gaps in specific categories. The output is only as good as your prompt — see our <a href="#" onclick="nav('home');setTimeout(()=>document.getElementById('leadmagnet').scrollIntoView({behavior:'smooth'}),100);return false" class="text-teal-700">free AI prompt pack</a> for copy-paste templates that work.</p>
+        <p><strong>Zendrop's AI Product Finder:</strong> Built directly into the platform. Surfaces trending products from live sales data across the Zendrop network — useful because it reflects actual purchase behaviour, not just social buzz.</p>
+        <p><strong>TikTok Creative Center:</strong> Filter by top-performing ads in your category over the last 30 days. Products with high engagement on organic TikTok that don't yet have saturated paid ad presence are your sweet spot.</p>
+        <p><strong>Google Trends + Exploding Topics:</strong> Identify whether a search trend is growing, peaking, or declining before you commit. A product with rising trend + limited Amazon reviews = serious opportunity.</p>
+
+        <h3>A Practical Research Workflow</h3>
+        <p>Here's the sequence that consistently surfaces winning products in under two hours:</p>
+        <ul>
+          <li><strong>Step 1:</strong> Use a ChatGPT/Claude prompt to generate 15–20 product ideas in your niche, filtered for US/EU supplier availability and $30+ retail price point.</li>
+          <li><strong>Step 2:</strong> Run each idea through Google Trends. Cut anything declining or flat over the last 12 months.</li>
+          <li><strong>Step 3:</strong> Check TikTok Creative Center for ads in each category. High view counts + recent upload date = active market. No ads at all = either untapped or genuinely no demand.</li>
+          <li><strong>Step 4:</strong> Check Amazon reviews for the top 3 products in each category. Recent negative reviews about shipping time are a strong signal that a dropshipping store with fast US delivery can compete.</li>
+          <li><strong>Step 5:</strong> Cross-reference with the <a href="#" onclick="nav('directory');return false" class="text-teal-700">supplier directory</a> to confirm US/EU availability before committing.</li>
+        </ul>
+
+        <h3>What to Do With Your Shortlist</h3>
+        <p>Once you have 5–8 validated candidates, write real product pages — not generic descriptions copied from the supplier. Use AI to draft a first version, then edit for your brand voice. A well-written page with genuine benefits and honest specifications converts 2–3x better than a template page, and ranks better in organic search.</p>
+        <p>The sellers who win with AI in 2026 aren't the ones using it to generate more content faster. They're the ones using it to make smarter decisions before they start spending. The research phase is where the money is saved or lost.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- ===== FULL ARTICLE: First Store ===== -->
+  <div id="post-first-store" class="hidden">
+    <button onclick="backToBlog()" class="flex items-center gap-2 text-sm text-slate-500 hover:text-teal-700 mb-6">← Back to Blog</button>
+    <article class="bg-white rounded-xl border border-slate-200 p-6 sm:p-10 max-w-3xl">
+      <span class="tag bg-cyan-100 text-cyan-700">GUIDE</span>
+      <h1 class="text-3xl font-extrabold text-slate-900 mt-3 leading-tight">Setting Up Your First Dropshipping Store in Under an Hour</h1>
+      <p class="mt-2 text-sm text-slate-400">Published June 2026 · 6 min read · <a href="#" onclick="nav('directory');return false" class="text-teal-700 underline">Find your supplier →</a></p>
+      <div class="prose mt-6">
+        <p>Most "start your store in an hour" guides skip the parts that actually take time and gloss over the decisions that determine whether your store succeeds. This one won't. An hour is genuinely enough to have a working store connected to a live supplier — if you make the right decisions upfront and don't over-engineer the launch.</p>
+
+        <h3>Before You Start (5 minutes)</h3>
+        <p>Decide on one thing: your niche. Not "health and wellness" — that's a sector. Pick something specific: posture-correction products for desk workers, kitchen gadgets for small apartments, gear for first-time dog owners. Specific niches have specific buyers, and specific buyers are far easier to reach and convert. Write your niche in one sentence before opening a single browser tab.</p>
+
+        <h3>Step 1: Choose Your Platform (10 minutes)</h3>
+        <p>For a first store in 2026, Shopify is the default recommendation. It has the best supplier app ecosystem, the best checkout conversion, and the widest documentation. Start with the Basic plan ($29/month). You can migrate to a cheaper setup later — right now, removing friction is more important than saving $10/month.</p>
+        <p>If you're already on WooCommerce or Wix, both platforms have strong supplier integrations and you don't need to switch. The platform matters less than the execution.</p>
+
+        <h3>Step 2: Connect Your Supplier (15 minutes)</h3>
+        <p>Install a supplier app. For US/EU fast shipping, start with <a href="https://get.spocket.co/n9wumf7wnm7s" rel="sponsored nofollow" target="_blank" class="text-teal-700">Spocket</a> (free to browse) or <a href="https://zendrop.sjv.io/aN2Y5W" rel="sponsored nofollow" target="_blank" class="text-teal-700">Zendrop</a>. Both connect via Shopify's app store in under two minutes.</p>
+        <p>Browse the catalog in your niche. Import 5–10 products maximum to start. More products don't mean more sales — they mean more work and less focus. Set your pricing using a 2.5–3x markup on the supplier's cost, which leaves room for shipping, returns, and paid ads while still being competitive.</p>
+
+        <h3>Step 3: Build Your Core Pages (20 minutes)</h3>
+        <p>You need exactly four pages to launch: Home, Product pages (auto-generated), About, and a combined Policies page (shipping + returns + privacy). Shopify's templates generate most of this automatically. Write a genuine About page — even two paragraphs explaining who you are and why you picked this niche. Buyers read About pages before purchasing from an unknown store.</p>
+        <p>Don't build a blog, a FAQ page, a loyalty program, or custom checkout flows before your first sale. Every hour spent on pre-launch polish is an hour not spent on getting traffic.</p>
+
+        <h3>Step 4: Set Up a Domain and Basic Branding (10 minutes)</h3>
+        <p>Register a domain ($12–15/year via Namecheap or Google Domains). Pick a name that's short, clear, and says what you sell. Set up a logo using Shopify's built-in generator or Canva's free tier — a simple wordmark is fine for launch. You can hire a designer once you have revenue.</p>
+
+        <h3>Step 5: Launch (the minute you're done)</h3>
+        <p>Remove the password from your store and share the link somewhere your target buyer exists — a relevant subreddit, a Facebook group, a friend who matches the profile. Your first goal isn't sales; it's your first 100 visitors. Those visitors will tell you, through their behaviour, whether your product and positioning is working before you spend a cent on ads.</p>
+
+        <h3>What Comes After Launch</h3>
+        <p>The first 30 days are about data collection, not profit. Track where visitors come from, which products get viewed, and where people exit. That data tells you what to fix before scaling. Most first stores aren't profitable from day one — but the ones that survive 90 days are the ones that kept adjusting based on what they saw.</p>
+        <p>When you're ready to find more suppliers: <a href="#" onclick="nav('directory');return false" class="text-teal-700">browse the full directory →</a></p>
+      </div>
+    </article>
+  </div>
+
 </section>
 
 <!-- ============================================================= -->
@@ -452,8 +615,8 @@
   <h1 class="text-3xl font-extrabold text-slate-900">About DropShipCentral</h1>
   <div class="mt-6 max-w-3xl space-y-4 text-slate-600">
     <p>DropShipCentral is a dedicated vertical hub for the dropshipping ecosystem — a focused complement to broad B2B wholesale directories. Our mission is simple: help ecommerce sellers find vetted suppliers, the right tools, and trustworthy guidance to build profitable stores in 2026 and beyond.</p>
-    <p>We exist because dropshipping resources online are noisy and often outdated. We vet every supplier in our directory, disclose our affiliate relationships transparently, and prioritize genuinely helpful content over thin affiliate spam — aligned with modern search-quality and EEAT standards.</p>
-    <p>Our editorial approach emphasizes real seller value: accurate shipping data, honest tool comparisons, and practical playbooks. As the dropshipping vertical continues to professionalize, DropShipCentral aims to be the category's authoritative, scalable hub — a clean, monetizable property with strong synergies for B2B wholesale platforms and ecommerce aggregators.</p>
+    <p>We exist because dropshipping resources online are noisy and often outdated. We vet every supplier in our directory, disclose our affiliate relationships transparently, and prioritise genuinely helpful content over thin affiliate spam — aligned with modern search-quality and EEAT standards.</p>
+    <p>Our editorial approach emphasises real seller value: accurate shipping data, honest tool comparisons, and practical playbooks. As the dropshipping vertical continues to professionalize, DropShipCentral aims to be the category's authoritative, scalable hub.</p>
     <p>The site is actively maintained, continuously updated for 2026, and built for both organic search performance and long-term acquisition appeal. If you're a strategic partner, platform, or investor interested in the dropshipping vertical, we'd love to hear from you via our <a href="#" onclick="nav('contact');return false" class="text-teal-700 underline">contact page</a>.</p>
   </div>
   <div class="mt-8 grid sm:grid-cols-3 gap-6">
@@ -468,23 +631,20 @@
 <!-- ============================================================= -->
 <section x-section="legal">
   <h1 class="text-3xl font-extrabold text-slate-900">Legal &amp; Disclosures</h1>
-
   <div class="mt-6 bg-white rounded-xl border border-slate-200 p-7 max-w-3xl">
     <h2 class="text-xl font-bold">Affiliate Disclosure</h2>
     <p class="mt-3 text-slate-600 text-sm">DropShipCentral participates in affiliate programs including but not limited to Spocket, Printful, Printify, Zendrop, DSers, CJdropshipping, Shopify, BigCommerce, AutoDS, Dropified, SaleHoo, and the Amazon Associates Program. When you click certain links and make a purchase or sign up, we may earn a commission at no additional cost to you. We only recommend products and services we believe provide genuine value, and our editorial opinions are our own.</p>
   </div>
-
   <div class="mt-6 bg-white rounded-xl border border-slate-200 p-7 max-w-3xl">
     <h2 class="text-xl font-bold">Privacy Policy</h2>
     <p class="mt-3 text-slate-600 text-sm">We respect your privacy and collect only the information you voluntarily provide (such as your email address via our forms) along with standard analytics data via Google Analytics.</p>
-    <p class="mt-3 text-slate-600 text-sm"><strong>Email marketing.</strong> When you subscribe, your email is processed and stored by our email service provider, Brevo, on our behalf, and is used to send you the resources you requested and related marketing emails. You provide explicit consent at sign-up, and you can withdraw it at any time using the unsubscribe link included in every email.</p>
-    <p class="mt-3 text-slate-600 text-sm"><strong>Cookies &amp; advertising.</strong> We use Google AdSense and Google Analytics, which may set cookies to measure traffic and serve relevant ads. You can manage or disable cookies in your browser settings, and where required by law, advertising cookies are set only with your consent.</p>
-    <p class="mt-3 text-slate-600 text-sm"><strong>Your rights.</strong> Depending on your location (including under the GDPR and CCPA), you may have the right to access, correct, or delete your personal data, or to object to its processing. We never sell your personal information. To exercise any right, contact us at <a href="mailto:privacy@dropshipcentral.com" class="text-teal-700 underline">privacy@dropshipcentral.com</a>.</p>
+    <p class="mt-3 text-slate-600 text-sm"><strong>Email marketing.</strong> When you subscribe, your email is processed and stored by Brevo on our behalf and used to send you the resources you requested and related marketing emails. You provide explicit consent at sign-up and can withdraw it at any time via the unsubscribe link in every email.</p>
+    <p class="mt-3 text-slate-600 text-sm"><strong>Cookies &amp; advertising.</strong> We use Google AdSense and Google Analytics, which may set cookies to measure traffic and serve relevant ads. You can manage or disable cookies in your browser settings.</p>
+    <p class="mt-3 text-slate-600 text-sm"><strong>Your rights.</strong> Under the GDPR and CCPA, you may have the right to access, correct, or delete your personal data. We never sell your data. Contact us at <a href="mailto:privacy@dropshipcentral.com" class="text-teal-700 underline">privacy@dropshipcentral.com</a>.</p>
   </div>
-
   <div class="mt-6 bg-white rounded-xl border border-slate-200 p-7 max-w-3xl">
     <h2 class="text-xl font-bold">Terms of Service</h2>
-    <p class="mt-3 text-slate-600 text-sm">The content on DropShipCentral is provided for informational purposes only and does not constitute financial, legal, or business advice. We make no guarantees regarding income or results. Third-party suppliers and tools are independent entities; we are not responsible for their products, services, or actions. Use this site at your own discretion. All trademarks belong to their respective owners.</p>
+    <p class="mt-3 text-slate-600 text-sm">Content on DropShipCentral is for informational purposes only and does not constitute financial, legal, or business advice. We make no guarantees regarding income or results. Third-party suppliers and tools are independent entities; we are not responsible for their products, services, or actions. All trademarks belong to their respective owners.</p>
   </div>
 </section>
 
@@ -498,17 +658,17 @@
       <h2 class="font-bold text-lg mb-4">General Inquiries</h2>
       <div data-form-body>
         <label class="text-sm font-semibold">Name</label>
-        <input required name="name" class="mt-1 mb-3 w-full border border-slate-300 rounded-lg px-3 py-2">
+        <input required name="name" class="mt-1 mb-3 w-full border border-slate-300 rounded-lg px-3 py-2.5 text-base">
         <label class="text-sm font-semibold">Email</label>
-        <input required type="email" name="email" class="mt-1 mb-3 w-full border border-slate-300 rounded-lg px-3 py-2">
+        <input required type="email" name="email" class="mt-1 mb-3 w-full border border-slate-300 rounded-lg px-3 py-2.5 text-base">
         <label class="text-sm font-semibold">Message</label>
-        <textarea required name="message" rows="4" class="mt-1 mb-3 w-full border border-slate-300 rounded-lg px-3 py-2"></textarea>
-        <button class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2.5 rounded-lg">Send Message</button>
-        <p class="mt-2 text-xs text-slate-500">We use your details only to respond to your inquiry, per our <a href="#" onclick="nav('legal');return false" class="text-teal-700 underline">Privacy Policy</a>.</p>
+        <textarea required name="message" rows="4" class="mt-1 mb-3 w-full border border-slate-300 rounded-lg px-3 py-2.5 text-base"></textarea>
+        <button class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 rounded-lg">Send Message</button>
+        <p class="mt-2 text-xs text-slate-500">We use your details only to respond to your inquiry per our <a href="#" onclick="nav('legal');return false" class="text-teal-700 underline">Privacy Policy</a>.</p>
       </div>
       <div data-form-success class="hidden text-center py-8">
         <div class="text-3xl">✅</div>
-        <p class="mt-2 font-bold text-slate-900">Thanks — message received!</p>
+        <p class="mt-2 font-bold text-slate-900">Message received!</p>
         <p class="mt-1 text-sm text-slate-600">We'll be in touch shortly.</p>
       </div>
     </form>
@@ -516,7 +676,7 @@
       <span class="inline-block bg-white/15 text-xs font-semibold px-3 py-1 rounded-full">For Investors &amp; Partners</span>
       <h2 class="text-2xl font-extrabold mt-4">Acquisition Inquiries</h2>
       <p class="mt-3 text-slate-200 text-sm">DropShipCentral is a focused, scalable dropshipping vertical hub with clean monetization (affiliate + AdSense), a growing email list, a vetted supplier directory, and strong category synergy for B2B wholesale platforms and ecommerce aggregators.</p>
-      <p class="mt-3 text-slate-200 text-sm">The site is built for performance: fast static delivery, 2026-optimised SEO, full affiliate disclosure, and a content moat that deepens over time. Strategic acquirers and partners can reach our team directly:</p>
+      <p class="mt-3 text-slate-200 text-sm">The site is built for performance: fast static delivery, 2026-optimised SEO, full affiliate disclosure, and a content moat that deepens over time. Strategic acquirers and partners can reach us directly:</p>
       <a href="mailto:partnerships@dropshipcentral.com" class="mt-4 inline-block bg-white text-slate-900 font-semibold px-5 py-2.5 rounded-lg">partnerships@dropshipcentral.com</a>
     </div>
   </div>
@@ -524,26 +684,26 @@
 
 </main>
 
-<!-- ===================== FOOTER ===================== -->
+<!-- FOOTER -->
 <footer class="bg-slate-900 text-slate-300 mt-16">
-  <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8 text-sm">
+  <div class="max-w-7xl mx-auto px-4 py-12 grid sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm">
     <div>
       <div class="flex items-center gap-2"><span class="w-8 h-8 grid place-items-center rounded-lg bg-teal-600 text-white font-extrabold">D</span><span class="font-extrabold text-white">DropShipCentral</span></div>
-      <p class="mt-3 text-slate-400">The central hub for dropshipping suppliers, tools &amp; success in 2026.</p>
+      <p class="mt-3 text-slate-400 text-xs">The central hub for dropshipping suppliers, tools &amp; success in 2026.</p>
     </div>
     <div><h4 class="font-semibold text-white mb-3">Explore</h4><ul class="space-y-2 text-slate-400"><li><a href="#" onclick="nav('directory');return false" class="hover:text-white">Directory</a></li><li><a href="#" onclick="nav('tools');return false" class="hover:text-white">Tools &amp; Platforms</a></li><li><a href="#" onclick="nav('guides');return false" class="hover:text-white">Guides</a></li><li><a href="#" onclick="nav('blog');return false" class="hover:text-white">Blog</a></li></ul></div>
     <div><h4 class="font-semibold text-white mb-3">Company</h4><ul class="space-y-2 text-slate-400"><li><a href="#" onclick="nav('about');return false" class="hover:text-white">About</a></li><li><a href="#" onclick="nav('contact');return false" class="hover:text-white">Contact</a></li><li><a href="#" onclick="nav('legal');return false" class="hover:text-white">Legal &amp; Disclosures</a></li></ul></div>
     <div>
-      <h4 class="font-semibold text-white mb-3">Get the Free Kit</h4>
-      <p class="text-slate-400 mb-3 text-xs">Join other sellers — get our 2026 AI Supplier Starter Kit free.</p>
+      <h4 class="font-semibold text-white mb-3">Free Starter Kit</h4>
+      <p class="text-slate-400 mb-3 text-xs">Get our vetted supplier shortlist + AI prompt pack — free.</p>
       <form onsubmit="captureLead(event,'footer')" class="space-y-2">
         <div data-form-body>
-          <input required type="email" name="EMAIL" placeholder="your@email.com" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white placeholder-slate-500 focus:ring-2 focus:ring-teal-500 outline-none text-sm">
-          <button class="w-full mt-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 rounded-lg text-sm">Get Free Kit →</button>
+          <input required type="email" name="EMAIL" placeholder="your@email.com" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2.5 text-white placeholder-slate-500 focus:ring-2 focus:ring-teal-500 outline-none text-sm">
+          <button class="w-full mt-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2.5 rounded-lg text-sm">Get Free Kit →</button>
           <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
           <input type="hidden" name="locale" value="en">
         </div>
-        <div data-form-success class="hidden text-center py-3">
+        <div data-form-success class="hidden text-center py-2">
           <p class="text-teal-400 font-semibold text-sm">✅ Check your inbox!</p>
         </div>
       </form>
@@ -554,15 +714,15 @@
 
 <script>
 /* ---------- Section metadata ---------- */
-var SECTION_META = {
-  home:      {t:"DropShipCentral — The Central Hub for Dropshipping Suppliers, Tools & Success in 2026", d:"DropShipCentral is the 2026 central hub for vetted dropshipping suppliers, top affiliate tools, and beginner-friendly guides with fast US/EU shipping."},
-  directory: {t:"2026 Dropshipping Supplier Directory — DropShipCentral", d:"Search and filter 15 vetted 2026 dropshipping suppliers by region, niche, integration, and shipping speed. Spocket, Zendrop, Printful, DSers and more."},
-  tools:     {t:"Best Dropshipping Tools & Affiliate Platforms 2026 — DropShipCentral", d:"Compare the best 2026 dropshipping tools and affiliate platforms — Spocket, Printful, Zendrop, DSers, Shopify, BigCommerce — with commissions and free tiers."},
-  guides:    {t:"Dropshipping Guides & Resources 2026 — DropShipCentral", d:"Beginner-friendly 2026 dropshipping guides: how to start, best US/EU suppliers, AI tools, POD vs traditional, and mistakes to avoid."},
-  blog:      {t:"DropShipCentral Blog — Dropshipping Trends & Reviews 2026", d:"Fresh takes on dropshipping suppliers, tools, and trends for 2026."},
-  about:     {t:"About DropShipCentral — The Dropshipping Vertical Hub", d:"DropShipCentral is a focused, scalable dropshipping vertical hub built on vetted suppliers, honest tool reviews, and helpful 2026 content."},
-  legal:     {t:"Legal & Disclosures — DropShipCentral", d:"Affiliate disclosure, privacy policy, and terms of service for DropShipCentral."},
-  contact:   {t:"Contact & Acquisition Inquiries — DropShipCentral", d:"Get in touch with DropShipCentral, including acquisition and partnership inquiries for the dropshipping vertical."}
+var SECTION_META={
+  home:      {t:"DropShipCentral — The Central Hub for Dropshipping Suppliers, Tools & Success in 2026",d:"DropShipCentral is the 2026 central hub for vetted dropshipping suppliers, top affiliate tools, and beginner-friendly guides with fast US/EU shipping."},
+  directory: {t:"2026 Dropshipping Supplier Directory — DropShipCentral",d:"Search and filter 15 vetted 2026 dropshipping suppliers by region, niche, integration, and shipping speed. Spocket, Zendrop, Printful, DSers and more."},
+  tools:     {t:"Best Dropshipping Tools & Affiliate Platforms 2026 — DropShipCentral",d:"Compare the best 2026 dropshipping tools — Spocket, Printful, Zendrop, DSers, Shopify, BigCommerce — with commissions and free tiers."},
+  guides:    {t:"Dropshipping Guides & Resources 2026 — DropShipCentral",d:"Beginner-friendly 2026 dropshipping guides: how to start, best US/EU suppliers, AI tools, POD vs traditional, and mistakes to avoid."},
+  blog:      {t:"DropShipCentral Blog — Dropshipping Trends & Reviews 2026",d:"Full-length articles on dropshipping suppliers, tools, and trends for 2026 — including Spocket vs Zendrop, winning product categories, and AI research."},
+  about:     {t:"About DropShipCentral — The Dropshipping Vertical Hub",d:"DropShipCentral is a focused, scalable dropshipping vertical hub built on vetted suppliers, honest tool reviews, and helpful 2026 content."},
+  legal:     {t:"Legal & Disclosures — DropShipCentral",d:"Affiliate disclosure, privacy policy, and terms of service for DropShipCentral."},
+  contact:   {t:"Contact & Acquisition Inquiries — DropShipCentral",d:"Get in touch with DropShipCentral, including acquisition and partnership inquiries for the dropshipping vertical."}
 };
 
 /* ---------- Navigation ---------- */
@@ -570,26 +730,40 @@ function nav(id){
   document.querySelectorAll('[x-section]').forEach(s=>s.classList.remove('active'));
   var el=document.querySelector('[x-section="'+id+'"]');
   if(el)el.classList.add('active');
+  // If navigating to blog, always show index
+  if(id==='blog') backToBlog();
   document.getElementById('mobileMenu').classList.add('hidden');
   window.scrollTo({top:0,behavior:'smooth'});
   var m=SECTION_META[id];
-  if(m){
-    document.title=m.t;
-    var md=document.getElementById('metaDescription');
-    if(md)md.setAttribute('content',m.d);
-  }
+  if(m){document.title=m.t;var md=document.getElementById('metaDescription');if(md)md.setAttribute('content',m.d);}
   if(window.gtag)gtag('event','page_view',{page_title:id,page_location:location.origin+'/#'+id});
   if(history.replaceState)history.replaceState(null,'','#'+id);
 }
 function toggleMobile(){document.getElementById('mobileMenu').classList.toggle('hidden');}
 document.getElementById('year').textContent=new Date().getFullYear();
+
+/* ---------- Blog post navigation ---------- */
+function showPost(slug){
+  document.getElementById('blog-index').classList.add('hidden');
+  document.querySelectorAll('[id^="post-"]').forEach(p=>p.classList.add('hidden'));
+  var post=document.getElementById('post-'+slug);
+  if(post)post.classList.remove('hidden');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(window.gtag)gtag('event','page_view',{page_title:'blog/'+slug});
+}
+function backToBlog(){
+  document.querySelectorAll('[id^="post-"]').forEach(p=>p.classList.add('hidden'));
+  var idx=document.getElementById('blog-index');
+  if(idx)idx.classList.remove('hidden');
+}
+
 window.addEventListener('DOMContentLoaded',()=>{
   var h=location.hash.replace('#','');
   if(h&&document.querySelector('[x-section="'+h+'"]'))nav(h);
   renderDirectory();
 });
 
-/* ---------- Supplier data (15 vetted 2026 suppliers) ---------- */
+/* ---------- Supplier data ---------- */
 var SUPPLIERS=[
   {name:"Spocket",region:"US/EU",niche:"General",ship:"fast",shipTxt:"2–7 days",integ:"Shopify, Wix, Woo",partner:true},
   {name:"Zendrop",region:"US",niche:"General",ship:"fast",shipTxt:"3–7 days",integ:"Shopify",partner:true},
@@ -609,7 +783,6 @@ var SUPPLIERS=[
 ];
 
 var AFF="https://your-affiliate-link.com/";
-/* Real approved affiliate links — others fall back to supplier homepage or AFF placeholder */
 var REAL_LINKS={
   "Spocket":"https://get.spocket.co/n9wumf7wnm7s",
   "Zendrop":"https://zendrop.sjv.io/aN2Y5W",
@@ -636,25 +809,34 @@ function renderDirectory(){
   var region=document.getElementById('regionFilter')?.value||'';
   var niche=document.getElementById('nicheFilter')?.value||'';
   var ship=document.getElementById('shipFilter')?.value||'';
+  var sort=document.getElementById('sortBy')?.value||'';
   var all=SUPPLIERS.concat(getSubmitted());
   var rows=all.filter(s=>
     (!q||s.name.toLowerCase().includes(q)||(s.niche||'').toLowerCase().includes(q))&&
     (!region||s.region===region)&&(!niche||s.niche===niche)&&(!ship||s.ship===ship)
   );
+  // Sorting
+  if(sort==='ship') rows.sort((a,b)=>(a.ship==='fast'?0:1)-(b.ship==='fast'?0:1));
+  else if(sort==='region') rows.sort((a,b)=>{
+    var score=r=>r==='US'?0:r==='US/EU'?1:r==='EU'?2:3;
+    return score(a.region)-score(b.region);
+  });
+  else if(sort==='name') rows.sort((a,b)=>a.name.localeCompare(b.name));
+
   var body=document.getElementById('directoryBody');
   if(!body)return;
   body.innerHTML=rows.map(s=>`
     <tr class="border-t border-slate-100 hover:bg-slate-50">
       <td class="px-4 py-3 font-semibold">${s.name}</td>
-      <td class="px-4 py-3">${s.region}</td>
-      <td class="px-4 py-3">${s.niche}</td>
+      <td class="px-4 py-3 mobile-hide">${s.region}</td>
+      <td class="px-4 py-3 mobile-hide">${s.niche}</td>
       <td class="px-4 py-3">${s.shipTxt||''}</td>
-      <td class="px-4 py-3 text-slate-500">${s.integ||'—'}</td>
-      <td class="px-4 py-3">${s.partner
+      <td class="px-4 py-3 text-slate-500 mobile-hide">${s.integ||'—'}</td>
+      <td class="px-4 py-3 mobile-hide">${s.partner
         ?'<span class="text-[10px] bg-teal-100 text-teal-700 px-2 py-0.5 rounded font-semibold">Partner ✓</span>'
         :'<span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-semibold">Verified</span>'}</td>
       <td class="px-4 py-3">${s.partner
-        ?'<a rel="sponsored nofollow" target="_blank" href="'+(REAL_LINKS[s.name]||(AFF+s.name.toLowerCase().replace(/[^a-z0-9]/g,'')))+'\" class="text-teal-700 font-semibold">Visit →</a>'
+        ?'<a rel="sponsored nofollow" target="_blank" href="'+(REAL_LINKS[s.name]||(AFF+s.name.toLowerCase().replace(/[^a-z0-9]/g,'')))+'\" class="text-teal-700 font-semibold whitespace-nowrap">Visit →</a>'
         :'<span class="text-slate-400">—</span>'}</td>
     </tr>`).join('')||'<tr><td colspan="7" class="px-4 py-6 text-center text-slate-400">No suppliers match your filters.</td></tr>';
   document.getElementById('dirCount').textContent=rows.length+' supplier(s) shown';
@@ -674,7 +856,6 @@ function submitSupplier(e){
   var entry={name:f.name.value,region:f.region.value,niche:f.niche.value,shipTxt:'pending review',integ:'—',ship:'',partner:false,url:f.url.value};
   list.push(entry);
   localStorage.setItem('dsc_suppliers',JSON.stringify(list));
-  console.log('[DropShipCentral] Supplier submitted:',entry);
   showSuccess(f);
   renderDirectory();
   if(window.gtag)gtag('event','generate_lead',{type:'supplier_submit'});
@@ -686,19 +867,14 @@ function captureLead(e,source){
   e.preventDefault();
   var f=e.target;
   var email=(f.EMAIL&&f.EMAIL.value)||(f.email&&f.email.value)||'';
-
   var leads=[];
   try{leads=JSON.parse(localStorage.getItem('dsc_leads')||'[]')}catch(_){}
   leads.push({email:email,source:source,at:new Date().toISOString()});
   localStorage.setItem('dsc_leads',JSON.stringify(leads));
-  console.log('[DropShipCentral] Lead captured:',{email:email,source:source});
   if(window.gtag)gtag('event','generate_lead',{type:source});
-
   if(source==='starter-kit'||source==='footer'){
-    try{
-      var fd=new FormData(f);
-      fetch(BREVO_ACTION,{method:'POST',mode:'no-cors',body:fd});
-    }catch(err){console.warn('[DropShipCentral] Brevo submit issue:',err);}
+    try{fetch(BREVO_ACTION,{method:'POST',mode:'no-cors',body:new FormData(f)});}
+    catch(err){console.warn('[DSC] Brevo issue:',err);}
   }
   showSuccess(f);
 }
