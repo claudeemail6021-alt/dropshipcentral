@@ -987,12 +987,17 @@ function showPost(slug){
   var post=document.getElementById('post-'+slug);
   if(post)post.classList.remove('hidden');
   window.scrollTo({top:0,behavior:'smooth'});
-  if(window.gtag)gtag('event','page_view',{page_title:'blog/'+slug});
+  if(window.gtag)gtag('event','page_view',{page_title:'blog/'+slug,page_location:location.origin+'/blog/'+slug});
+  if(history.replaceState)history.replaceState(null,'','#blog/'+slug);
+  var title=post?post.querySelector('h1')?.textContent:'DropShipCentral Blog';
+  document.title=(title?title+' — ':'')+'DropShipCentral';
 }
 function backToBlog(){
   document.querySelectorAll('[id^="post-"]').forEach(p=>p.classList.add('hidden'));
   var idx=document.getElementById('blog-index');
   if(idx)idx.classList.remove('hidden');
+  if(history.replaceState)history.replaceState(null,'','#blog');
+  document.title='DropShipCentral Blog — Dropshipping Trends & Reviews 2026';
 }
 
 /* ---- Cookie consent ---- */
@@ -1016,7 +1021,13 @@ function hideCookieBanner(){
 
 window.addEventListener('DOMContentLoaded',()=>{
   var h=location.hash.replace('#','');
-  if(h&&document.querySelector('[x-section="'+h+'"]'))nav(h);
+  if(h&&h.startsWith('blog/')){
+    var slug=h.replace('blog/','');
+    nav('blog');
+    setTimeout(()=>showPost(slug),50);
+  } else if(h&&document.querySelector('[x-section="'+h+'"]')){
+    nav(h);
+  }
   renderDirectory();
   renderTools();
   initCookieBanner();
